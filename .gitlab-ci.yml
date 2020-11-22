@@ -1,0 +1,21 @@
+image: python:3.7-slim-stretch
+
+stages:
+  - test
+  - build
+
+before_script:
+  - apt-get update && apt-get -y install sudo make curl git
+  - make prepare-env && make prepare-dev
+
+test:
+  stage: test
+  script:
+    - make test
+
+lint:
+  stage: test
+  script:
+    - make lint
+
+

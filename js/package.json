@@ -1,0 +1,55 @@
+{
+    "name": "reforis_haas",
+    "author": "CZ.NIC, z.s.p.o.",
+    "repository": {
+        "type": "git",
+        "url": "https://gitlab.nic.cz/turris/reforis/reforis-haas.git"
+    },
+    "license": "GPL-3.0",
+    "version": "0.1.0",
+    "description": "reForis HaaS Plugin.",
+    "main": "./src/app.js",
+    "dependencies": {
+        "foris": "^5.1.5"
+    },
+    "peerDependencies": {
+        "prop-types": "15.7.2",
+        "react": "16.9.0",
+        "react-dom": "16.9.0",
+        "react-router-dom": "5.1.2"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.7.7",
+        "@babel/core": "^7.7.7",
+        "@babel/plugin-transform-runtime": "^7.7.6",
+        "@babel/preset-env": "^7.7.7",
+        "@babel/preset-react": "^7.7.4",
+        "@testing-library/react": "^8.0.9",
+        "babel-loader": "^8.0.6",
+        "css-loader": "^3.4.1",
+        "eslint": "^6.8.0",
+        "eslint-config-prettier": "^6.15.0",
+        "eslint-config-reforis": "^1.0.0",
+        "eslint-plugin-prettier": "^3.1.4",
+        "jest": "^24.9.0",
+        "jest-mock-axios": "^3.2.0",
+        "moment-timezone": "^0.5.27",
+        "prettier": "^2.2.0",
+        "prop-types": "15.7.2",
+        "react": "16.9.0",
+        "react-dom": "16.9.0",
+        "react-router-dom": "5.1.2",
+        "style-loader": "^0.23.1",
+        "webpack": "^4.41.5",
+        "webpack-cli": "^3.3.10"
+    },
+    "scripts": {
+        "watch": "webpack --watch --mode=development",
+        "build": "webpack --mode=production",
+        "lint": "eslint src",
+        "lint:fix": "eslint --fix src",
+        "test": "jest",
+        "test:watch": "jest --watch",
+        "test:coverage": "jest --coverage --colors"
+    }
+}
