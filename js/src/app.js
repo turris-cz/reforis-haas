@@ -8,12 +8,11 @@
 import Haas from "./Haas/Haas";
 
 const HaasPlugin = {
-    name: _("Haas"),
-    weight: 100,
-    submenuId: "haas",
+    name: "HaaS",
+    weight: 102,
     path: "/haas",
+    submenuId: "sentinel",
     component: Haas,
-    icon: "cube",
 };
 
 ForisPlugins.push(HaasPlugin);
