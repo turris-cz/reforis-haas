@@ -9,7 +9,7 @@ from http import HTTPStatus
 from flask import Blueprint, current_app, jsonify, request
 from flask_babel import gettext as _
 
-from reforis.foris_controller_api.utils import log_error, validate_json, APIError
+from reforis.foris_controller_api.utils import validate_json, APIError
 
 # pylint: disable=invalid-name
 blueprint = Blueprint(
@@ -30,17 +30,26 @@ haas = {
 }
 
 
-@blueprint.route('/example', methods=['GET'])
-def get_example():
-    return jsonify(current_app.backend.perform('example_module', 'example_action'))
+@blueprint.route('/settings', methods=['GET', 'POST'])
+def haas_settings():
+    """
+    .. http:get:: /api/haas
+        See ``get_settings`` action in the `foris-controller haas module JSON schema
+        <https://gitlab.nic.cz/turris/foris-controller/foris-controller-haas-module/-/blob/master/foris_controller_modules/haas/schema/haas.json>`_.
 
+    .. http:post:: /api/haas
+        See ``update_settings`` action in the `foris-controller haas module JSON schema
+        <https://gitlab.nic.cz/turris/foris-controller/foris-controller-haas-module/-/blob/master/foris_controller_modules/haas/schema/haas.json>`_.
+    """
+    data = request.json
 
-@blueprint.route('/example', methods=['POST'])
-def post_example():
-    validate_json(request.json, {'modules': list})
+    if request.method == 'GET':
+        response = current_app.backend.perform('haas', 'get_settings')
+    elif request.method == 'POST':
+        validate_json(data, {'token': str})
+        response = current_app.backend.perform('haas', 'update_settings', data)
+        if response.get('result') is not True:
+            raise APIError(_('Cannot update HaaS settings'),
+                           HTTPStatus.INTERNAL_SERVER_ERROR)
 
-    response = current_app.backend.perform('example_module', 'example_action', request.json)
-    if response.get('result') is not True:
-        raise APIError(_('Cannot create entity'), HTTPStatus.INTERNAL_SERVER_ERROR)
-
-    return jsonify(response), HTTPStatus.CREATED
+    return jsonify(response)

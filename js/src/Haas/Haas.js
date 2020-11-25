@@ -5,22 +5,44 @@
  * See /LICENSE for more information.
  */
 
-import React, { useEffect } from "react";
+import React from "react";
+import { ForisForm } from "foris";
 
-import { useAPIGet } from "foris";
-
-import API_URLs from "API";
+import API_URLs from "../API";
+import HaasForm from "./HaasForm";
 
 export default function Haas() {
-    const [, getExample] = useAPIGet(API_URLs.example);
-    useEffect(() => {
-        getExample();
-    }, [getExample]);
-
     return (
         <>
-            <h1>Haas</h1>
-            <p>{_("Add your components here")}</p>
+            <h1>{_("Honeypot as a Service")}</h1>
+            <p
+                dangerouslySetInnerHTML={{
+                    __html: _(
+                        `Honeypot as a Service (HaaS) is a special software which simulates an operating system
+                        and allows an attacker to log in via SSH or telnet and execute commands or download malware.
+                        For more information click <a href="https://haas.nic.cz/" target="_blank" rel="noopener 
+                        noreferrer">here<sup><i class="fas fa-external-link-alt link-outside-icon fa-xs"></i></sup></a>.`
+                    ),
+                }}
+            />
+            <ForisForm
+                forisConfig={{
+                    endpoint: API_URLs.haas,
+                }}
+                validator={validator}
+            >
+                <HaasForm />
+            </ForisForm>
         </>
     );
+}
+
+function validator(formData) {
+    const error = {};
+    const regex = /[a-f0-9]{32}/;
+
+    if (formData.token.length > 32 || !regex.test(formData.token))
+        error.token = _("Please enter a valid alphanumeric token.");
+
+    return error.token ? error : undefined;
 }

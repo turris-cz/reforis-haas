@@ -1,0 +1,187 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Haas /> Should render HaaS component & form's disabled submit button. 1`] = `
+<div>
+  <h1>
+    Honeypot as a Service
+  </h1>
+  <p>
+    Honeypot as a Service (HaaS) is a special software which simulates an operating system
+                        and allows an attacker to log in via SSH or telnet and execute commands or download malware.
+                        For more information click 
+    <a
+      href="https://haas.nic.cz/"
+      rel="noopener 
+                        noreferrer"
+      target="_blank"
+    >
+      here
+      <sup>
+        <i
+          class="fas fa-external-link-alt link-outside-icon fa-xs"
+        />
+      </sup>
+    </a>
+    .
+  </p>
+  <div
+    class="card p-4 col-sm-12 col-lg-12 p-0 mb-3"
+  >
+    <form>
+      <h2>
+        Proxy Settings
+      </h2>
+      <div
+        class="form-group"
+      >
+        <div
+          class="custom-control custom-checkbox "
+        >
+          <input
+            class="custom-control-input"
+            id="1"
+            type="checkbox"
+          />
+          <label
+            class="custom-control-label"
+            for="1"
+          >
+            Enable HaaS proxy
+          </label>
+        </div>
+      </div>
+      <div
+        class="form-group"
+      >
+        <label
+          for="2"
+        >
+          HaaS token
+        </label>
+        <div
+          class="input-group"
+        >
+          <input
+            class="form-control  is-invalid"
+            disabled=""
+            id="2"
+            type="text"
+            value="random_token"
+          />
+        </div>
+        <div
+          class="invalid-feedback"
+        >
+          Please enter a valid alphanumeric token.
+        </div>
+        <small
+          class="form-text text-muted"
+        >
+          Token used to match SSH session with device in HaaS proxy.
+        </small>
+      </div>
+      <div
+        class="text-right"
+      >
+        <button
+          class="btn btn-primary  col-sm-12 col-md-3 col-lg-2"
+          disabled=""
+          type="submit"
+        >
+          Save
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+`;
+
+exports[`<Haas /> Should render HaaS component & form's enabled submit button. 1`] = `
+<div>
+  <h1>
+    Honeypot as a Service
+  </h1>
+  <p>
+    Honeypot as a Service (HaaS) is a special software which simulates an operating system
+                        and allows an attacker to log in via SSH or telnet and execute commands or download malware.
+                        For more information click 
+    <a
+      href="https://haas.nic.cz/"
+      rel="noopener 
+                        noreferrer"
+      target="_blank"
+    >
+      here
+      <sup>
+        <i
+          class="fas fa-external-link-alt link-outside-icon fa-xs"
+        />
+      </sup>
+    </a>
+    .
+  </p>
+  <div
+    class="card p-4 col-sm-12 col-lg-12 p-0 mb-3"
+  >
+    <form>
+      <h2>
+        Proxy Settings
+      </h2>
+      <div
+        class="form-group"
+      >
+        <div
+          class="custom-control custom-checkbox "
+        >
+          <input
+            class="custom-control-input"
+            id="1"
+            type="checkbox"
+          />
+          <label
+            class="custom-control-label"
+            for="1"
+          >
+            Enable HaaS proxy
+          </label>
+        </div>
+      </div>
+      <div
+        class="form-group"
+      >
+        <label
+          for="2"
+        >
+          HaaS token
+        </label>
+        <div
+          class="input-group"
+        >
+          <input
+            class="form-control"
+            disabled=""
+            id="2"
+            type="text"
+            value="d4c8033cd3b4566ead6c50862d1e0cc7"
+          />
+        </div>
+        <small
+          class="form-text text-muted"
+        >
+          Token used to match SSH session with device in HaaS proxy.
+        </small>
+      </div>
+      <div
+        class="text-right"
+      >
+        <button
+          class="btn btn-primary  col-sm-12 col-md-3 col-lg-2"
+          type="submit"
+        >
+          Save
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+`;

@@ -7,17 +7,28 @@
 
 import React from "react";
 import mockAxios from "jest-mock-axios";
-import { render } from "foris/testUtils/customTestRender";
+import { render, waitForElement } from "foris/testUtils/customTestRender";
 
 import Haas from "../Haas";
 
 describe("<Haas />", () => {
-    it("should render component", () => {
-        const { getByText } = render(<Haas />);
-        expect(getByText("Haas")).toBeDefined();
-        expect(mockAxios.get).toBeCalledWith(
-            "/reforis/haas/api/example",
-            expect.anything()
-        );
+    let container;
+
+    it("Should render HaaS component & form's disabled submit button.", async () => {
+        const { getByText, container } = render(<Haas />);
+        mockAxios.mockResponse({
+            data: { enabled: false, token: "random_token" },
+        });
+        await waitForElement(() => getByText("Proxy Settings"));
+        expect(container).toMatchSnapshot();
+    });
+
+    it("Should render HaaS component & form's enabled submit button.", async () => {
+        const { getByText, container } = render(<Haas />);
+        mockAxios.mockResponse({
+            data: { enabled: false, token: "d4c8033cd3b4566ead6c50862d1e0cc7" },
+        });
+        await waitForElement(() => getByText("Proxy Settings"));
+        expect(container).toMatchSnapshot();
     });
 });

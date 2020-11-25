@@ -11,7 +11,7 @@ const API_URL_PREFIX = `${REFORIS_URL_PREFIX}/haas/api`;
 
 const API_URLs = new Proxy(
     {
-        example: "/example",
+        haas: "/settings",
     },
     {
         get: (target, name) => `${API_URL_PREFIX}${target[name]}`,
