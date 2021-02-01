@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-11-22 20:08+0100\n"
+"POT-Creation-Date: 2021-02-01 13:00+0100\n"
 "PO-Revision-Date: 2020-11-22 20:08+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: it\n"
@@ -18,15 +18,52 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.0\n"
 
-#: js/src/app.js:11
-msgid "Haas"
+#: js/src/Haas/Haas.js:17
+msgid "Honeypot as a Service"
 msgstr ""
 
-#: js/src/Haas/Haas.js:23
-msgid "Add your components here"
+#: js/src/Haas/Haas.js:20
+msgid ""
+"Honeypot as a Service (HaaS) is a special software which simulates an "
+"operating system\n"
+"                        and allows an attacker to log in via SSH or "
+"telnet and execute commands or download malware.\n"
+"                        For more information click <a "
+"href=\"https://haas.nic.cz/\" target=\"_blank\" rel=\"noopener \n"
+"                        noreferrer\">here<sup><i class=\"fas fa-external-"
+"link-alt link-outside-icon fa-xs\"></i></sup></a>."
 msgstr ""
 
-#: reforis_haas/__init__.py:44
-msgid "Cannot create entity"
+#: js/src/Haas/Haas.js:45
+msgid "Please enter a valid alphanumeric token."
 msgstr ""
+
+#: js/src/Haas/HaasForm.js:40
+msgid "Proxy Settings"
+msgstr ""
+
+#: js/src/Haas/HaasForm.js:43
+msgid "Enable HaaS proxy"
+msgstr ""
+
+#: js/src/Haas/HaasForm.js:51
+msgid "HaaS token"
+msgstr ""
+
+#: js/src/Haas/HaasForm.js:53
+msgid "Token used to match SSH session with device in HaaS proxy."
+msgstr ""
+
+#: reforis_haas/__init__.py:52
+msgid "Cannot update HaaS settings"
+msgstr ""
+
+#~ msgid "Haas"
+#~ msgstr ""
+
+#~ msgid "Add your components here"
+#~ msgstr ""
+
+#~ msgid "Cannot create entity"
+#~ msgstr ""
 
