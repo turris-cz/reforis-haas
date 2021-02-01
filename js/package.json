@@ -10,7 +10,7 @@
     "description": "reForis HaaS Plugin.",
     "main": "./src/app.js",
     "dependencies": {
-        "foris": "^5.1.5"
+        "foris": "^5.1.9"
     },
     "peerDependencies": {
         "prop-types": "15.7.2",
