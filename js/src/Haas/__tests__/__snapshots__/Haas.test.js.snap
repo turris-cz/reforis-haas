@@ -25,7 +25,7 @@ exports[`<Haas /> Should render HaaS component & form's disabled submit button. 
     .
   </p>
   <div
-    class="card p-4 col-sm-12 col-lg-12 p-0 mb-3"
+    class="card p-4 col-sm-12 col-lg-12 p-0 mb-4"
   >
     <form>
       <h2>
@@ -121,7 +121,7 @@ exports[`<Haas /> Should render HaaS component & form's enabled submit button. 1
     .
   </p>
   <div
-    class="card p-4 col-sm-12 col-lg-12 p-0 mb-3"
+    class="card p-4 col-sm-12 col-lg-12 p-0 mb-4"
   >
     <form>
       <h2>
