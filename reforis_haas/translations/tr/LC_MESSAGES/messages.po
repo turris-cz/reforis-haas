@@ -8,18 +8,21 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-02-01 13:00+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-02-03 03:41+0000\n"
+"Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
+"Language-Team: Turkish <https://hosted.weblate.org/projects/turris/"
+"reforis-haas-plugin/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.5-dev\n"
 "Generated-By: Babel 2.9.0\n"
 
 #: js/src/Haas/Haas.js:17
 msgid "Honeypot as a Service"
-msgstr ""
+msgstr "Hizmet olarak tuzak"
 
 #: js/src/Haas/Haas.js:20
 msgid ""
@@ -32,27 +35,37 @@ msgid ""
 "                        noreferrer\">here<sup><i class=\"fas fa-external-"
 "link-alt link-outside-icon fa-xs\"></i></sup></a>."
 msgstr ""
+"Hizmet olarak tuzak (Honeypot as a Service - HaaS), bir işletim sistemini "
+"taklit eden ve saldırganın SSH\n"
+"                        veya telnet aracılığıyla oturum açmasına ve "
+"komutları çalıştırmasına veya kötü amaçlı yazılım indirmesine\n"
+"                        izin veren özel bir yazılımdır. Daha fazla bilgi "
+"için <a href=\"https://haas.nic.cz/\" target=\"_blank\" rel=\"noopener \n"
+"                        noreferrer\">buraya<sup><i class=\"fas fa-external-"
+"link-alt link-outside-icon fa-xs\"></i></sup></a> tıklayın."
 
 #: js/src/Haas/Haas.js:45
 msgid "Please enter a valid alphanumeric token."
-msgstr ""
+msgstr "Lütfen geçerli bir alfanümerik belirteç girin."
 
 #: js/src/Haas/HaasForm.js:40
 msgid "Proxy Settings"
-msgstr ""
+msgstr "Vekil Sunucu Ayarları"
 
 #: js/src/Haas/HaasForm.js:43
 msgid "Enable HaaS proxy"
-msgstr ""
+msgstr "HaaS vekilini etkinleştir"
 
 #: js/src/Haas/HaasForm.js:51
 msgid "HaaS token"
-msgstr ""
+msgstr "HaaS belirteci"
 
 #: js/src/Haas/HaasForm.js:53
 msgid "Token used to match SSH session with device in HaaS proxy."
 msgstr ""
+"HaaS vekilindeki aygıt ile SSH oturumunu eşleştirmek için kullanılan "
+"belirteç."
 
 #: reforis_haas/__init__.py:52
 msgid "Cannot update HaaS settings"
-msgstr ""
+msgstr "HaaS ayarları güncellenemiyor"
