@@ -52,8 +52,6 @@ setuptools.setup(
             'pylint-quotes',
             'pycodestyle',
             'reforis @ git+https://gitlab.nic.cz/turris/reforis/reforis#egg=reforis',
-            'foris-client @ git+https://gitlab.nic.cz/turris/foris-controller/foris-client#egg=foris-client',
-            'paho-mqtt',
         ],
     },
     setup_requires=[
