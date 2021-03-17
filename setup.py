@@ -47,13 +47,13 @@ setuptools.setup(
     ],
     extras_require={
         'devel': [
-            'pytest==3.7.1',
-            'pylint==2.3.1',
-            'pylint-quotes==0.2.1',
-            'pycodestyle==2.5.0',
-            'reforis @ git+https://gitlab.nic.cz/turris/reforis/reforis@master#egg=reforis',
-            'foris-client @ git+https://gitlab.nic.cz/turris/foris-controller/foris-client@master#egg=foris-client',
-            'paho-mqtt==1.5.0',
+            'pytest',
+            'pylint',
+            'pylint-quotes',
+            'pycodestyle',
+            'reforis @ git+https://gitlab.nic.cz/turris/reforis/reforis#egg=reforis',
+            'foris-client @ git+https://gitlab.nic.cz/turris/foris-controller/foris-client#egg=foris-client',
+            'paho-mqtt',
         ],
     },
     setup_requires=[
