@@ -44,6 +44,7 @@ setuptools.setup(
         'flask',
         'Babel',
         'Flask-Babel',
+        'reforis @ git+https://gitlab.nic.cz/turris/reforis/reforis#egg=reforis',
     ],
     extras_require={
         'devel': [
@@ -51,7 +52,6 @@ setuptools.setup(
             'pylint',
             'pylint-quotes',
             'pycodestyle',
-            'reforis @ git+https://gitlab.nic.cz/turris/reforis/reforis#egg=reforis',
         ],
     },
     setup_requires=[
