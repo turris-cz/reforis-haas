@@ -8,19 +8,21 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-02-01 13:00+0100\n"
-"PO-Revision-Date: 2020-11-22 20:08+0100\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2021-05-06 15:32+0000\n"
+"Last-Translator: XoD DarK <xod@xoddark.com>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/turris/"
+"reforis-haas-plugin/fr/>\n"
 "Language: fr\n"
-"Language-Team: fr <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.7-dev\n"
 "Generated-By: Babel 2.9.0\n"
 
 #: js/src/Haas/Haas.js:17
 msgid "Honeypot as a Service"
-msgstr ""
+msgstr "Pot de Miel en tant que service"
 
 #: js/src/Haas/Haas.js:20
 msgid ""
@@ -33,30 +35,39 @@ msgid ""
 "                        noreferrer\">here<sup><i class=\"fas fa-external-"
 "link-alt link-outside-icon fa-xs\"></i></sup></a>."
 msgstr ""
+"Pot de Miel en tant que Service (HaaS) est un logiciel spécifique qui simule "
+"un système d'exploitation et permet à un attaquant de se connecter via SSH "
+"ou telnet et d’exécuter des commandes ou de télécharger des logiciels "
+"malveillants.\n"
+"Pour plus d'information clickez <a href=\"https://haas.nic.cz/\" target="
+"\"_blank\" rel=\"noopener noreferrer\">ici<sup><i class=\"fas fa-external-"
+"link-alt link-outside-icon fa-xs\"></i></sup></a>."
 
 #: js/src/Haas/Haas.js:45
 msgid "Please enter a valid alphanumeric token."
-msgstr ""
+msgstr "Veuillez saisir un jeton alphanumérique valide."
 
 #: js/src/Haas/HaasForm.js:40
 msgid "Proxy Settings"
-msgstr ""
+msgstr "Paramètres du proxy"
 
 #: js/src/Haas/HaasForm.js:43
 msgid "Enable HaaS proxy"
-msgstr ""
+msgstr "Activer le proxy HaaS"
 
 #: js/src/Haas/HaasForm.js:51
 msgid "HaaS token"
-msgstr ""
+msgstr "Jeton HaaS"
 
 #: js/src/Haas/HaasForm.js:53
 msgid "Token used to match SSH session with device in HaaS proxy."
 msgstr ""
+"Jeton utilisé pour faire correspondre la session SSH avec l'appareil dans le "
+"proxy HaaS."
 
 #: reforis_haas/__init__.py:52
 msgid "Cannot update HaaS settings"
-msgstr ""
+msgstr "Impossible de mettre à jour les paramètres HaaS"
 
 #~ msgid "Haas"
 #~ msgstr ""
@@ -66,4 +77,3 @@ msgstr ""
 
 #~ msgid "Cannot create entity"
 #~ msgstr ""
-
