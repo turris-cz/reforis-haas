@@ -8,20 +8,22 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-02-01 13:00+0100\n"
-"PO-Revision-Date: 2020-11-22 20:08+0100\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2021-02-19 07:02+0000\n"
+"Last-Translator: Алексей Леньшин <alenshin@gmail.com>\n"
+"Language-Team: Russian <https://hosted.weblate.org/projects/turris/"
+"reforis-haas-plugin/ru/>\n"
 "Language: ru\n"
-"Language-Team: ru <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.5\n"
 "Generated-By: Babel 2.9.0\n"
 
 #: js/src/Haas/Haas.js:17
 msgid "Honeypot as a Service"
-msgstr ""
+msgstr "Ловушка как сервис"
 
 #: js/src/Haas/Haas.js:20
 msgid ""
@@ -34,30 +36,39 @@ msgid ""
 "                        noreferrer\">here<sup><i class=\"fas fa-external-"
 "link-alt link-outside-icon fa-xs\"></i></sup></a>."
 msgstr ""
+"Ловушка как сервис (Honeypot as a Service - HaaS) - это специальное "
+"программное обеспечение, которое имитирует операционную систему и позволяет "
+"злоумышленнику войти в систему через SSH или telnet и выполнять команды или "
+"загружать вредоносное ПО. Для получения дополнительной информации щелкните "
+"<a href=\"https://haas.nic.cz/\" target=\"_blank\" rel=\"noopener "
+"noreferrer\"> здесь <sup><i class=\"fas fa-external-link-alt link-outside-"
+"icon fa-xs\"></i></sup></a>."
 
 #: js/src/Haas/Haas.js:45
 msgid "Please enter a valid alphanumeric token."
-msgstr ""
+msgstr "Пожалуйста, введите действительный буквенно-цифровой токен."
 
 #: js/src/Haas/HaasForm.js:40
 msgid "Proxy Settings"
-msgstr ""
+msgstr "Настройки прокси"
 
 #: js/src/Haas/HaasForm.js:43
 msgid "Enable HaaS proxy"
-msgstr ""
+msgstr "Включить прокси HaaS"
 
 #: js/src/Haas/HaasForm.js:51
 msgid "HaaS token"
-msgstr ""
+msgstr "Токен HaaS"
 
 #: js/src/Haas/HaasForm.js:53
 msgid "Token used to match SSH session with device in HaaS proxy."
 msgstr ""
+"Токен используется для сопоставления сеанса SSH с устройством в прокси-"
+"сервере HaaS."
 
 #: reforis_haas/__init__.py:52
 msgid "Cannot update HaaS settings"
-msgstr ""
+msgstr "Не удается обновить настройки HaaS"
 
 #~ msgid "Haas"
 #~ msgstr ""
@@ -67,4 +78,3 @@ msgstr ""
 
 #~ msgid "Cannot create entity"
 #~ msgstr ""
-
