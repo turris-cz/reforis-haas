@@ -10,7 +10,7 @@
     "description": "reForis HaaS Plugin.",
     "main": "./src/app.js",
     "dependencies": {
-        "foris": "^5.1.9"
+        "foris": "^5.1.12"
     },
     "peerDependencies": {
         "prop-types": "15.7.2",
@@ -26,7 +26,7 @@
         "@babel/preset-react": "^7.7.4",
         "@testing-library/react": "^8.0.9",
         "babel-loader": "^8.0.6",
-        "css-loader": "^3.4.1",
+        "css-loader": "^5.2.6",
         "eslint": "^6.8.0",
         "eslint-config-prettier": "^6.15.0",
         "eslint-config-reforis": "^1.0.0",
