@@ -1,18 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Haas /> Should render HaaS component & form's disabled submit button. 1`] = `
+exports[`<Haas /> Should render HaaS component and accept a valid token. 1`] = `
 <div>
   <h1>
     Honeypot as a Service
   </h1>
   <p>
-    Honeypot as a Service (HaaS) is a special software which simulates an operating system
-                        and allows an attacker to log in via SSH or telnet and execute commands or download malware.
-                        For more information click 
+    Honeypot as a Service (HaaS) is a special software which simulates an operating system and allows an attacker to log in via SSH or telnet and execute commands or download malware. For more information click 
     <a
       href="https://haas.nic.cz/"
-      rel="noopener 
-                        noreferrer"
+      rel="noopener noreferrer"
       target="_blank"
     >
       here
@@ -35,7 +32,7 @@ exports[`<Haas /> Should render HaaS component & form's disabled submit button. 
         class="form-group"
       >
         <div
-          class="custom-control custom-checkbox "
+          class="custom-control custom-switch custom-control-inline"
         >
           <input
             class="custom-control-input"
@@ -54,7 +51,7 @@ exports[`<Haas /> Should render HaaS component & form's disabled submit button. 
         class="form-group"
       >
         <label
-          for="2"
+          for="3"
         >
           HaaS token
         </label>
@@ -62,17 +59,11 @@ exports[`<Haas /> Should render HaaS component & form's disabled submit button. 
           class="input-group"
         >
           <input
-            class="form-control  is-invalid"
-            disabled=""
-            id="2"
+            class="form-control"
+            id="3"
             type="text"
-            value="random_token"
+            value="0008033cd3b4566ead6c50862d1e0cc7111111abcadf1111"
           />
-        </div>
-        <div
-          class="invalid-feedback"
-        >
-          Please enter a valid alphanumeric token.
         </div>
         <small
           class="form-text text-muted"
@@ -85,7 +76,6 @@ exports[`<Haas /> Should render HaaS component & form's disabled submit button. 
       >
         <button
           class="btn btn-primary  col-sm-12 col-md-3 col-lg-2"
-          disabled=""
           type="submit"
         >
           Save
@@ -96,19 +86,16 @@ exports[`<Haas /> Should render HaaS component & form's disabled submit button. 
 </div>
 `;
 
-exports[`<Haas /> Should render HaaS component & form's enabled submit button. 1`] = `
+exports[`<Haas /> Should render HaaS component. 1`] = `
 <div>
   <h1>
     Honeypot as a Service
   </h1>
   <p>
-    Honeypot as a Service (HaaS) is a special software which simulates an operating system
-                        and allows an attacker to log in via SSH or telnet and execute commands or download malware.
-                        For more information click 
+    Honeypot as a Service (HaaS) is a special software which simulates an operating system and allows an attacker to log in via SSH or telnet and execute commands or download malware. For more information click 
     <a
       href="https://haas.nic.cz/"
-      rel="noopener 
-                        noreferrer"
+      rel="noopener noreferrer"
       target="_blank"
     >
       here
@@ -131,7 +118,7 @@ exports[`<Haas /> Should render HaaS component & form's enabled submit button. 1
         class="form-group"
       >
         <div
-          class="custom-control custom-checkbox "
+          class="custom-control custom-switch custom-control-inline"
         >
           <input
             class="custom-control-input"
@@ -147,35 +134,11 @@ exports[`<Haas /> Should render HaaS component & form's enabled submit button. 1
         </div>
       </div>
       <div
-        class="form-group"
-      >
-        <label
-          for="2"
-        >
-          HaaS token
-        </label>
-        <div
-          class="input-group"
-        >
-          <input
-            class="form-control"
-            disabled=""
-            id="2"
-            type="text"
-            value="d4c8033cd3b4566ead6c50862d1e0cc7"
-          />
-        </div>
-        <small
-          class="form-text text-muted"
-        >
-          Token used to match SSH session with device in HaaS proxy.
-        </small>
-      </div>
-      <div
         class="text-right"
       >
         <button
           class="btn btn-primary  col-sm-12 col-md-3 col-lg-2"
+          disabled=""
           type="submit"
         >
           Save
