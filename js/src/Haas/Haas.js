@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2020 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+ * Copyright (C) 2020-2021 CZ.NIC z.s.p.o. (https://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
@@ -17,12 +17,12 @@ export default function Haas() {
             <h1>{_("Honeypot as a Service")}</h1>
             <p
                 dangerouslySetInnerHTML={{
-                    __html: _(
-                        `Honeypot as a Service (HaaS) is a special software which simulates an operating system
-                        and allows an attacker to log in via SSH or telnet and execute commands or download malware.
-                        For more information click <a href="https://haas.nic.cz/" target="_blank" rel="noopener 
-                        noreferrer">here<sup><i class="fas fa-external-link-alt link-outside-icon fa-xs"></i></sup></a>.`
-                    ),
+                    __html: _(`Honeypot as a Service (HaaS) is a special \
+software which simulates an operating system and allows an attacker to log in \
+via SSH or telnet and execute commands or download malware. For more \
+information click <a href="https://haas.nic.cz/" target="_blank" rel="noopener \
+noreferrer">here<sup><i class="fas fa-external-link-alt link-outside-icon \
+fa-xs"></i></sup></a>.`),
                 }}
             />
             <ForisForm
@@ -39,9 +39,9 @@ export default function Haas() {
 
 function validator(formData) {
     const error = {};
-    const regex = /[a-f0-9]{32}/;
+    const regex = /[a-f0-9]{32,48}/;
 
-    if (formData.token.length > 32 || !regex.test(formData.token))
+    if (formData.token.length > 48 || !regex.test(formData.token))
         error.token = _("Please enter a valid alphanumeric token.");
 
     return error.token ? error : undefined;
