@@ -8,19 +8,21 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-02-01 13:00+0100\n"
-"PO-Revision-Date: 2020-11-22 20:08+0100\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2021-06-15 22:23+0000\n"
+"Last-Translator: Atec <nil.maho@gmail.com>\n"
+"Language-Team: Slovak <https://hosted.weblate.org/projects/turris/"
+"reforis-haas-plugin/sk/>\n"
 "Language: sk\n"
-"Language-Team: sk <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 4.7-dev\n"
 "Generated-By: Babel 2.9.0\n"
 
 #: js/src/Haas/Haas.js:17
 msgid "Honeypot as a Service"
-msgstr ""
+msgstr "Honeypot as a Service"
 
 #: js/src/Haas/Haas.js:20
 msgid ""
@@ -33,30 +35,39 @@ msgid ""
 "                        noreferrer\">here<sup><i class=\"fas fa-external-"
 "link-alt link-outside-icon fa-xs\"></i></sup></a>."
 msgstr ""
+"Honeypot as a Service (HaaS, honeypot ako služba) je špeciálny software, "
+"ktorý simuluje\n"
+"                        operačný systém a umožňuje útočníkovi, aby sa "
+"prihlásil cez SSH alebo telnet a spúšťal\n"
+"                        príkazy alebo sťahoval malware. Viac informácií <a "
+"href=\"https://haas.nic.cz/\" target=\"_blank\" rel=\"noopener \n"
+"                        noreferrer\">nájdete tu<sup><i class=\"fas fa-"
+"external-link-alt link-outside-icon fa-xs\"></i></sup></a>."
 
 #: js/src/Haas/Haas.js:45
 msgid "Please enter a valid alphanumeric token."
-msgstr ""
+msgstr "Prosím, vložte platný alfanumerický token."
 
 #: js/src/Haas/HaasForm.js:40
 msgid "Proxy Settings"
-msgstr ""
+msgstr "Nastavenia proxy"
 
 #: js/src/Haas/HaasForm.js:43
 msgid "Enable HaaS proxy"
-msgstr ""
+msgstr "Povoliť proxy HaaS"
 
 #: js/src/Haas/HaasForm.js:51
 msgid "HaaS token"
-msgstr ""
+msgstr "Token HaaS"
 
 #: js/src/Haas/HaasForm.js:53
 msgid "Token used to match SSH session with device in HaaS proxy."
 msgstr ""
+"Token sa používa na prepojenie SSH pripojenia so zariadením v proxy HaaS."
 
 #: reforis_haas/__init__.py:52
 msgid "Cannot update HaaS settings"
-msgstr ""
+msgstr "Nastavenie HaaS sa nedá aktualizovať"
 
 #~ msgid "Haas"
 #~ msgstr ""
@@ -66,4 +77,3 @@ msgstr ""
 
 #~ msgid "Cannot create entity"
 #~ msgstr ""
-
