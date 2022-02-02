@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2020-2021 CZ.NIC z.s.p.o. (https://www.nic.cz/)
+ * Copyright (C) 2020-2022 CZ.NIC z.s.p.o. (https://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
@@ -51,12 +51,13 @@ export default function HAASForm({
                     value={formData.token || ""}
                     label={_("HaaS token")}
                     error={formErrors.token}
-                    helpText={_(`Token used to match SSH session with device \
-in HaaS proxy.`)}
+                    helpText={_(
+                        `Token used to match SSH session with device in HaaS proxy.`
+                    )}
                     onChange={setFormValue((value) => ({
                         token: { $set: value },
                     }))}
-                    disabled={disabled || !formData.enabled}
+                    disabled={disabled}
                 />
             )}
         </>
