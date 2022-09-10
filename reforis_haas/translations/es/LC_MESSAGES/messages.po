@@ -8,18 +8,21 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-02-01 13:00+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-09-11 16:21+0000\n"
+"Last-Translator: Dan Cybersec <dan.cybersec@protonmail.com>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/turris/"
+"reforis-haas-plugin/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.14.1-dev\n"
 "Generated-By: Babel 2.9.0\n"
 
 #: js/src/Haas/Haas.js:17
 msgid "Honeypot as a Service"
-msgstr ""
+msgstr "Honeypot como servicio"
 
 #: js/src/Haas/Haas.js:20
 msgid ""
@@ -32,27 +35,37 @@ msgid ""
 "                        noreferrer\">here<sup><i class=\"fas fa-external-"
 "link-alt link-outside-icon fa-xs\"></i></sup></a>."
 msgstr ""
+"El servicio de Honeypot  (HaaS) es un programa especial que simula un "
+"sistema operativo \n"
+"                        y permite a un atacante iniciar sesión mediante SSH "
+"or telnet y ejecutar comandos o descargar programas maliciosos.\n"
+"                        Para más información pulsar <a href=\"https://haas."
+"nic.cz/\" target=\"_blank\" rel=\"noopener \n"
+"                        noreferrer\">aquí<sup><i class=\"fas fa-external-"
+"link-alt link-outside-icon fa-xs\"></i></sup></a>."
 
 #: js/src/Haas/Haas.js:45
 msgid "Please enter a valid alphanumeric token."
-msgstr ""
+msgstr "Por favor, introduce un token alfanumérico válido."
 
 #: js/src/Haas/HaasForm.js:40
 msgid "Proxy Settings"
-msgstr ""
+msgstr "Ajustes de proxy"
 
 #: js/src/Haas/HaasForm.js:43
 msgid "Enable HaaS proxy"
-msgstr ""
+msgstr "Activar el proxy HaaS"
 
 #: js/src/Haas/HaasForm.js:51
 msgid "HaaS token"
-msgstr ""
+msgstr "Token HaaS"
 
 #: js/src/Haas/HaasForm.js:53
 msgid "Token used to match SSH session with device in HaaS proxy."
 msgstr ""
+"Token utilizado para asociar la sesión SSH con el dispositivo en el proxy "
+"HaaS."
 
 #: reforis_haas/__init__.py:52
 msgid "Cannot update HaaS settings"
-msgstr ""
+msgstr "No se pueden actualizar los ajustes de HaaS"
