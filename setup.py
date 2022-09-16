@@ -1,4 +1,4 @@
-#  Copyright (C) 2020 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+#  Copyright (C) 2019-2022 CZ.NIC z.s.p.o. (https://www.nic.cz/)
 #
 #  This is free software, licensed under the GNU General Public License v3.
 #  See /LICENSE for more information.
@@ -44,7 +44,6 @@ setuptools.setup(
         'flask',
         'Babel',
         'Flask-Babel',
-        'reforis @ git+https://gitlab.nic.cz/turris/reforis/reforis#egg=reforis',
     ],
     extras_require={
         'devel': [
@@ -52,6 +51,7 @@ setuptools.setup(
             'pylint',
             'pylint-quotes',
             'pycodestyle',
+            'reforis @ git+https://gitlab.nic.cz/turris/reforis/reforis#egg=reforis',
         ],
     },
     setup_requires=[
