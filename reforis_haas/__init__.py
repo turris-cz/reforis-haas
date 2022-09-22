@@ -1,4 +1,4 @@
-#  Copyright (C) 2020 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+#  Copyright (C) 2022 CZ.NIC z.s.p.o. (https://www.nic.cz/)
 #
 #  This is free software, licensed under the GNU General Public License v3.
 #  See /LICENSE for more information.
@@ -41,13 +41,11 @@ def haas_settings():
         See ``update_settings`` action in the `foris-controller haas module JSON schema
         <https://gitlab.nic.cz/turris/foris-controller/foris-controller-haas-module/-/blob/master/foris_controller_modules/haas/schema/haas.json>`_.
     """
-    data = request.json
-
     if request.method == 'GET':
         response = current_app.backend.perform('haas', 'get_settings')
     elif request.method == 'POST':
-        validate_json(data, {'token': str})
-        response = current_app.backend.perform('haas', 'update_settings', data)
+        validate_json(request.json, {'token': str})
+        response = current_app.backend.perform('haas', 'update_settings', request.json)
         if response.get('result') is not True:
             raise APIError(_('Cannot update HaaS settings'),
                            HTTPStatus.INTERNAL_SERVER_ERROR)
