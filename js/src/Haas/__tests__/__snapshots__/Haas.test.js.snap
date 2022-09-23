@@ -6,7 +6,10 @@ exports[`<Haas /> Should render HaaS component and accept a valid token. 1`] = `
     Honeypot as a Service
   </h1>
   <p>
-    Honeypot as a Service (HaaS) is a special software which simulates an operating system and allows an attacker to log in via SSH or telnet and execute commands or download malware. For more information click 
+    Honeypot as a Service (HaaS) is a special software which simulates an operating system and allows an attacker to log in via SSH or telnet and execute commands or download malware.
+  </p>
+  <p>
+    If you want to use Honeypot as a Service on your router, you should have the public IPv4 address, register on the HaaS website, and fill out the token. Also, there you can see sessions and statistics from the SSH honeypot from your router. For more information click 
     <a
       href="https://haas.nic.cz/"
       rel="noopener noreferrer"
@@ -15,7 +18,7 @@ exports[`<Haas /> Should render HaaS component and accept a valid token. 1`] = `
       here
       <sup>
         <i
-          class="fas fa-external-link-alt link-outside-icon fa-xs"
+          class="fas fa-external-link-alt link-outside-icon fa-xs ml-1"
         />
       </sup>
     </a>
@@ -92,7 +95,10 @@ exports[`<Haas /> Should render HaaS component. 1`] = `
     Honeypot as a Service
   </h1>
   <p>
-    Honeypot as a Service (HaaS) is a special software which simulates an operating system and allows an attacker to log in via SSH or telnet and execute commands or download malware. For more information click 
+    Honeypot as a Service (HaaS) is a special software which simulates an operating system and allows an attacker to log in via SSH or telnet and execute commands or download malware.
+  </p>
+  <p>
+    If you want to use Honeypot as a Service on your router, you should have the public IPv4 address, register on the HaaS website, and fill out the token. Also, there you can see sessions and statistics from the SSH honeypot from your router. For more information click 
     <a
       href="https://haas.nic.cz/"
       rel="noopener noreferrer"
@@ -101,7 +107,7 @@ exports[`<Haas /> Should render HaaS component. 1`] = `
       here
       <sup>
         <i
-          class="fas fa-external-link-alt link-outside-icon fa-xs"
+          class="fas fa-external-link-alt link-outside-icon fa-xs ml-1"
         />
       </sup>
     </a>

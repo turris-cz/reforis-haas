@@ -1,9 +1,13 @@
-#  Copyright (C) 2020 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+#  Copyright (C) 2019-2022 CZ.NIC z.s.p.o. (https://www.nic.cz/)
 #
 #  This is free software, licensed under the GNU General Public License v3.
 #  See /LICENSE for more information.
 
-.PHONY: all venv prepare-dev install install-js install-local-reforis watch-js build-js lint lint-js lint-js-fix lint-web test test-js test-web test-js-update-snapshots create-messages init-langs update-messages compile-messages clean
+PROJECT="reForis HaaS Plugin"
+# Retrieve version from setup.py 
+VERSION= $(shell sed -En "s/.*version=['\"](.+)['\"].*/\1/p" setup.py)
+COPYRIGHT_HOLDER="CZ.NIC, z.s.p.o. (https://www.nic.cz/)"
+MSGID_BUGS_ADDRESS="tech.support@turris.cz"
 
 VENV_NAME?=venv
 VENV_BIN=$(shell pwd)/$(VENV_NAME)/bin
@@ -12,8 +16,9 @@ PYTHON=python3
 
 JS_DIR=./js
 
-LANGS = cs da de el en fi fo fr hr hu it ja ko lt nb nb_NO nl pl ro ru sk sv
+LANGS = cs da de el en fi fo fr hr hu it ja ko lt nb_NO nl pl ro ru sk sv
 
+.PHONY: all
 all:
 	@echo "make prepare-env"
 	@echo "    Install tools for development environment: node, npm, Python, virtualenv"
@@ -38,67 +43,119 @@ all:
 	@echo "make clean"
 	@echo "    Remove python artifacts and virtualenv."
 
-venv: $(VENV_NAME)/bin/activate
-$(VENV_NAME)/bin/activate: setup.py
-	test -d $(VENV_NAME) || $(PYTHON) -m virtualenv -p $(PYTHON) $(VENV_NAME)
-	# Some problem in latest version of setuptools during extracting translations.
-	$(VENV_BIN)/$(PYTHON) -m pip install -U pip setuptools==39.1.0
-	$(VENV_BIN)/$(PYTHON) -m pip install -e .[devel]
-	touch $(VENV_NAME)/bin/activate
 
+# Preparation
+
+.PHONY: prepare-env
 prepare-env:
-	which npm || curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
-	which npm || sudo apt install -y nodejs
-	which $(PYTHON) || sudo apt install -y $(PYTHON) $(PYTHON)-pip
+	which npm || curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+	which npm || sudo apt-get install -y nodejs
+
+	which $(PYTHON) || sudo apt-get install -y $(PYTHON) $(PYTHON)-pip
 	which virtualenv || sudo $(PYTHON) -m pip install virtualenv
+
+.PHONY: prepare-dev
 prepare-dev:
 	cd $(JS_DIR); npm install
 	make venv
 
+.PHONY: venv
+venv: $(VENV_NAME)/bin/activate
+$(VENV_NAME)/bin/activate: setup.py
+	test -d $(VENV_NAME) || $(PYTHON) -m virtualenv -p $(PYTHON) $(VENV_NAME)
+	# upgrade pip to latest releases
+	$(VENV_BIN)/$(PYTHON) -m pip install --upgrade pip
+	$(VENV_BIN)/$(PYTHON) -m pip install -e .[devel]
+	touch $(VENV_NAME)/bin/activate
+
+
+# Installation
+
+.PHONY: install
 install:
 	$(PYTHON) -m pip install -e .
 	ln -sf /tmp/reforis-haas/reforis_static/reforis_haas /tmp/reforis/reforis_static/
 	/etc/init.d/lighttpd restart
+
+.PHONY: install-js
 install-js: js/package.json
 	cd $(JS_DIR); npm install --save-dev
+
+.PHONY: install-local-reforis
 install-local-reforis:
 	$(VENV_BIN)/$(PYTHON) -m pip install -e ../reforis
 
-watch-js:
-	cd $(JS_DIR); npm run-script watch
+
+# JavaScript
+
+.PHONY: build-js	
 build-js:
 	cd $(JS_DIR); npm run-script build
 
+.PHONY: watch-js
+watch-js:
+	cd $(JS_DIR); npm run-script watch
+
+
+# Linting
+
+.PHONY: lint
 lint: lint-js lint-web
+
+.PHONY: lint-js
 lint-js:
 	cd $(JS_DIR); npm run lint
+
+.PHONY: lint-js-fix
 lint-js-fix:
 	cd $(JS_DIR); npm run lint:fix
+
+.PHONY: lint-web
 lint-web: venv
 	$(VENV_BIN)/$(PYTHON) -m pylint --rcfile=pylintrc reforis_haas
 	$(VENV_BIN)/$(PYTHON) -m pycodestyle --config=pycodestyle reforis_haas
 
+
+# Testing
+
+.PHONY: test
 test: test-js test-web
+
+.PHONY: test-js
 test-js:
 	cd $(JS_DIR); npm test
-test-web: venv
-	$(VENV_BIN)/$(PYTHON) -m pytest -vv tests
+
+.PHONY: test-js-watch
+test-js-watch:
+	cd $(JS_DIR); npm test -- --watch
+
+.PHONY: test-js-update-snapshots
 test-js-update-snapshots:
 	cd $(JS_DIR); npm test -- -u
 
+.PHONY: test-web
+test-web: venv
+	$(VENV_BIN)/$(PYTHON) -m pytest -vv tests
+
+
+# Translations
+
+.PHONY: create-messages
 create-messages:
-	$(VENV_BIN)/pybabel extract -F babel.cfg -o ./reforis_haas/translations/messages.pot .
-init-langs: create-messages
-	for lang in $(LANGS); do \
-		$(VENV_BIN)/pybabel init \
-		-i reforis_haas/translations/messages.pot \
-		-d reforis_haas/translations/ -l $$lang \
-	; done
+	$(VENV_BIN)/pybabel extract -F babel.cfg -o ./reforis_haas/translations/messages.pot . --project=$(PROJECT) --version=$(VERSION) --copyright-holder=$(COPYRIGHT_HOLDER) --msgid-bugs-address=$(MSGID_BUGS_ADDRESS)
+
+.PHONY: update-messages
 update-messages:
-	$(VENV_BIN)/pybabel update -i ./reforis_haas/translations/messages.pot -d ./reforis_haas/translations
+	$(VENV_BIN)/pybabel update -i ./reforis_haas/translations/messages.pot -d ./reforis/translations --update-header-comment
+
+.PHONY: compile-messages
 compile-messages:
 	$(VENV_BIN)/pybabel compile -f -d ./reforis_haas/translations
 
+
+# Other
+
+.PHONY: clean
 clean:
 	find . -name '*.pyc' -exec rm -f {} +
 	rm -rf $(VENV_NAME) *.eggs *.egg-info dist build .cache
