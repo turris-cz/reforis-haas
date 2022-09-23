@@ -32,14 +32,14 @@ class HaasBuild(build_py):
 
 setuptools.setup(
     name=NAME,
-    version='0.1.3',
+    version='0.1.4',
     packages=setuptools.find_packages(exclude=['tests']),
     include_package_data=True,
 
     description='reForis HaaS Plugin.',
-    author='CZ.NIC, z.s.p.o.',
-    author_email='aleksandr.gumroian@nic.cz',
-
+    url='https://gitlab.nic.cz/turris/reforis/reforis-haas',
+    author='CZ.NIC, z.s.p.o. (https://www.nic.cz/)',
+    author_email='software@turris.cz',
     install_requires=[
         'flask',
         'Babel',
@@ -65,11 +65,11 @@ setuptools.setup(
     },
     classifiers=[
         'Framework :: Flask',
-        'Intended Audience :: Developers',
-        'Development Status :: 3 - Alpha',
-        'License :: Other/Proprietary License',
+        'Intended Audience :: End Users/Desktop',
+        'Development Status :: 5 - Production/Stable',
+        'License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)',
         'Natural Language :: English',
-        'Operating System :: OS Independent',
+        'Operating System :: POSIX :: Linux',
         'Programming Language :: Python :: 3',
         'Topic :: Internet :: WWW/HTTP :: WSGI :: Application',
     ],
