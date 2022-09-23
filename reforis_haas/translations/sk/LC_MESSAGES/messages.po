@@ -1,50 +1,48 @@
-# Slovak translations for PROJECT.
-# Copyright (C) 2020 ORGANIZATION
-# This file is distributed under the same license as the PROJECT project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+# Slovak translations for reForis HaaS Plugin.
+# Copyright (C) 2022 CZ.NIC, z.s.p.o. (https://www.nic.cz/)
+# This file is distributed under the same license as the reForis HaaS Plugin
+# project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-02-01 13:00+0100\n"
+"POT-Creation-Date: 2022-09-23 16:29+0200\n"
 "PO-Revision-Date: 2021-09-22 16:37+0000\n"
 "Last-Translator: Atec <dr.atec@gmail.com>\n"
-"Language-Team: Slovak <https://hosted.weblate.org/projects/turris/"
-"reforis-haas-plugin/sk/>\n"
 "Language: sk\n"
+"Language-Team: Slovak <https://hosted.weblate.org/projects/turris"
+"/reforis-haas-plugin/sk/>\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 4.9-dev\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.10.3\n"
 
 #: js/src/Haas/Haas.js:17
 msgid "Honeypot as a Service"
 msgstr "Honeypot as a Service"
 
-#: js/src/Haas/Haas.js:20
+#: js/src/Haas/Haas.js:19
 msgid ""
 "Honeypot as a Service (HaaS) is a special software which simulates an "
-"operating system\n"
-"                        and allows an attacker to log in via SSH or "
-"telnet and execute commands or download malware.\n"
-"                        For more information click <a "
-"href=\"https://haas.nic.cz/\" target=\"_blank\" rel=\"noopener \n"
-"                        noreferrer\">here<sup><i class=\"fas fa-external-"
-"link-alt link-outside-icon fa-xs\"></i></sup></a>."
+"operating system and allows an attacker to log in via SSH or telnet and "
+"execute commands or download malware."
 msgstr ""
-"Honeypot as a Service (HaaS, honeypot ako služba) je špeciálny software, "
-"ktorý simuluje\n"
-"                        operačný systém a umožňuje útočníkovi prihlásiť sa "
-"cez SSH alebo telnet, spúšťať\n"
-"                        príkazy alebo sťahovať malware. Viac informácií <a "
-"href=\"https://haas.nic.cz/\" target=\"_blank\" rel=\"noopener \n"
-"                        noreferrer\">nájdete tu<sup><i class=\"fas fa-"
-"external-link-alt link-outside-icon fa-xs\"></i></sup></a>."
 
-#: js/src/Haas/Haas.js:45
+#: js/src/Haas/Haas.js:25
+msgid ""
+"If you want to use Honeypot as a Service on your router, you should have "
+"the public IPv4 address, register on the HaaS website, and fill out the "
+"token. Also, there you can see sessions and statistics from the SSH "
+"honeypot from your router. For more information click <a "
+"href=\"https://haas.nic.cz/\" target=\"_blank\" rel=\"noopener "
+"noreferrer\">here<sup><i class=\"fas fa-external-link-alt link-outside-"
+"icon fa-xs ml-1\"></i></sup></a>."
+msgstr ""
+
+#: js/src/Haas/Haas.js:53
 msgid "Please enter a valid alphanumeric token."
 msgstr "Prosím, vložte platný alfanumerický token."
 
@@ -56,15 +54,15 @@ msgstr "Nastavenia proxy"
 msgid "Enable HaaS proxy"
 msgstr "Povoliť proxy HaaS"
 
-#: js/src/Haas/HaasForm.js:51
+#: js/src/Haas/HaasForm.js:52
 msgid "HaaS token"
 msgstr "Token HaaS"
 
-#: js/src/Haas/HaasForm.js:53
+#: js/src/Haas/HaasForm.js:54
 msgid "Token used to match SSH session with device in HaaS proxy."
 msgstr "Token sa používa na prepojenie SSH relácie so zariadením v proxy HaaS."
 
-#: reforis_haas/__init__.py:52
+#: reforis_haas/__init__.py:50
 msgid "Cannot update HaaS settings"
 msgstr "Nastavenie HaaS sa nedá aktualizovať"
 
@@ -76,3 +74,33 @@ msgstr "Nastavenie HaaS sa nedá aktualizovať"
 
 #~ msgid "Cannot create entity"
 #~ msgstr ""
+
+#~ msgid ""
+#~ "Honeypot as a Service (HaaS) is a"
+#~ " special software which simulates an "
+#~ "operating system\n"
+#~ "                        and allows an attacker"
+#~ " to log in via SSH or telnet"
+#~ " and execute commands or download "
+#~ "malware.\n"
+#~ "                        For more information "
+#~ "click <a href=\"https://haas.nic.cz/\" "
+#~ "target=\"_blank\" rel=\"noopener \n"
+#~ "                        noreferrer\">here<sup><i "
+#~ "class=\"fas fa-external-link-alt "
+#~ "link-outside-icon fa-xs\"></i></sup></a>."
+#~ msgstr ""
+#~ "Honeypot as a Service (HaaS, honeypot"
+#~ " ako služba) je špeciálny software, "
+#~ "ktorý simuluje\n"
+#~ "                        operačný systém a "
+#~ "umožňuje útočníkovi prihlásiť sa cez SSH"
+#~ " alebo telnet, spúšťať\n"
+#~ "                        príkazy alebo sťahovať "
+#~ "malware. Viac informácií <a "
+#~ "href=\"https://haas.nic.cz/\" target=\"_blank\" "
+#~ "rel=\"noopener \n"
+#~ "                        noreferrer\">nájdete tu<sup><i "
+#~ "class=\"fas fa-external-link-alt "
+#~ "link-outside-icon fa-xs\"></i></sup></a>."
+
