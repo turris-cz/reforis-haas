@@ -9,15 +9,16 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-09-23 16:29+0200\n"
-"PO-Revision-Date: 2021-02-03 03:41+0000\n"
+"PO-Revision-Date: 2022-10-11 11:22+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
+"Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/turris/"
+"reforis-haas-plugin/nb_NO/>\n"
 "Language: nb_NO\n"
-"Language-Team: Norwegian Bokmål "
-"<https://hosted.weblate.org/projects/turris/reforis-haas-plugin/nb_NO/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.14.1\n"
 "Generated-By: Babel 2.10.3\n"
 
 #: js/src/Haas/Haas.js:17
@@ -25,13 +26,18 @@ msgid "Honeypot as a Service"
 msgstr "Honningfelle som tjeneste"
 
 #: js/src/Haas/Haas.js:19
+#, fuzzy
 msgid ""
 "Honeypot as a Service (HaaS) is a special software which simulates an "
 "operating system and allows an attacker to log in via SSH or telnet and "
 "execute commands or download malware."
 msgstr ""
+"Honningkrukke som tjeneste (HaaS) er programvare som simulerer et "
+"operativsystem og lar en angriper logge inn via SSH eller Telnet for å kjøre "
+"kommandoer eller laste opp skadevare."
 
 #: js/src/Haas/Haas.js:25
+#, fuzzy
 msgid ""
 "If you want to use Honeypot as a Service on your router, you should have "
 "the public IPv4 address, register on the HaaS website, and fill out the "
@@ -41,6 +47,12 @@ msgid ""
 "noreferrer\">here<sup><i class=\"fas fa-external-link-alt link-outside-"
 "icon fa-xs ml-1\"></i></sup></a>."
 msgstr ""
+"Hvis du bruker honningkrukke som tjeneste på ruteren din, bør du ha din "
+"offentlige IPv4-adresse, registrere den på HaaS-nettsiden, og fylle ut "
+"symbolet. Der kan du også se økter og statistikk fra SSH-honningkrukken på "
+"ruteren din. Mer info er å finne <a href=\"https://haas.nic.cz/\" target="
+"\"_blank\" rel=\"noopener noreferrer\">her<sup><i class=\"fas fa-external-"
+"link-alt link-outside-icon fa-xs ml-1\"></i></sup></a>."
 
 #: js/src/Haas/Haas.js:53
 msgid "Please enter a valid alphanumeric token."
@@ -103,4 +115,3 @@ msgstr "Kan ikke oppdatere HaaS-innstillinger"
 #~ "                        noreferrer\">her<sup><i "
 #~ "class=\"fas fa-external-link-alt "
 #~ "link-outside-icon fa-xs\"></i></sup></a>."
-
