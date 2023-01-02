@@ -9,19 +9,21 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-09-23 16:29+0200\n"
-"PO-Revision-Date: 2020-11-22 20:08+0100\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2023-01-03 16:52+0000\n"
+"Last-Translator: Jonas Wiegner <jonas.wiegner@posteo.de>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/turris/"
+"reforis-haas-plugin/de/>\n"
 "Language: de\n"
-"Language-Team: de <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.15.1-dev\n"
 "Generated-By: Babel 2.10.3\n"
 
 #: js/src/Haas/Haas.js:17
 msgid "Honeypot as a Service"
-msgstr ""
+msgstr "Honeypot als Dienst"
 
 #: js/src/Haas/Haas.js:19
 msgid ""
@@ -29,6 +31,10 @@ msgid ""
 "operating system and allows an attacker to log in via SSH or telnet and "
 "execute commands or download malware."
 msgstr ""
+"Honeypot as a Service (HaaS) - Honeypot als Dienst ist eine spezielle "
+"Software, welche ein Betriebssystem simuliert und es Angreifern erlaubt, "
+"sich per SSH oder Telnet einzuloggen und Kommandos auszuführen oder Malware "
+"herunterzuladen."
 
 #: js/src/Haas/Haas.js:25
 msgid ""
@@ -40,30 +46,37 @@ msgid ""
 "noreferrer\">here<sup><i class=\"fas fa-external-link-alt link-outside-"
 "icon fa-xs ml-1\"></i></sup></a>."
 msgstr ""
+"Wenn sie Honeypot als Dienst auf Ihrem Router nutzen möchten, benötigen Sie "
+"eine öffentliche IPv4 Adresse, müssen sich auf der HaaS Webseite "
+"registrieren sowie das Token ausfüllen. Dort können Sie auch Verbindungen "
+"und Statistiken des SSH Honeypots auf Ihrem Router einsehen. Für weitere "
+"Informationen klicken Sie hier <a href=\"https://haas.nic.cz/\" target="
+"\"_blank\" rel=\"noopener noreferrer\">here<sup><i class=\"fas fa-external-"
+"link-alt link-outside-icon fa-xs ml-1\"></i></sup></a>."
 
 #: js/src/Haas/Haas.js:53
 msgid "Please enter a valid alphanumeric token."
-msgstr ""
+msgstr "Bitte einen gültigen alphanumerischen Token eingeben."
 
 #: js/src/Haas/HaasForm.js:40
 msgid "Proxy Settings"
-msgstr ""
+msgstr "Proxy Einstellungen"
 
 #: js/src/Haas/HaasForm.js:43
 msgid "Enable HaaS proxy"
-msgstr ""
+msgstr "Aktiviere den HaaS proxy"
 
 #: js/src/Haas/HaasForm.js:52
 msgid "HaaS token"
-msgstr ""
+msgstr "HaaS Token"
 
 #: js/src/Haas/HaasForm.js:54
 msgid "Token used to match SSH session with device in HaaS proxy."
-msgstr ""
+msgstr "Token, um SSH Sitzungen im HaaS Proxy dem Gerät zuzuordnen."
 
 #: reforis_haas/__init__.py:50
 msgid "Cannot update HaaS settings"
-msgstr ""
+msgstr "Ändern der HaaS Einstellungen nicht möglich"
 
 #~ msgid "Haas"
 #~ msgstr ""
@@ -89,4 +102,3 @@ msgstr ""
 #~ "class=\"fas fa-external-link-alt "
 #~ "link-outside-icon fa-xs\"></i></sup></a>."
 #~ msgstr ""
-
