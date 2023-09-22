@@ -9,19 +9,21 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-09-23 16:29+0200\n"
-"PO-Revision-Date: 2020-11-22 20:08+0100\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2023-09-23 19:01+0000\n"
+"Last-Translator: Kristoffer Grundström <swedishsailfishosuser@tutanota.com>\n"
+"Language-Team: Swedish <https://hosted.weblate.org/projects/turris/"
+"reforis-haas-plugin/sv/>\n"
 "Language: sv\n"
-"Language-Team: sv <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.1-dev\n"
 "Generated-By: Babel 2.10.3\n"
 
 #: js/src/Haas/Haas.js:17
 msgid "Honeypot as a Service"
-msgstr ""
+msgstr "Honeypot som en tjänst"
 
 #: js/src/Haas/Haas.js:19
 msgid ""
@@ -29,6 +31,9 @@ msgid ""
 "operating system and allows an attacker to log in via SSH or telnet and "
 "execute commands or download malware."
 msgstr ""
+"Honeypot som en tjänst (HaaS) är en speciell mjukvara som simulerar ett "
+"operativsystem och tillåter en angripare att logga in via SSH eller telnet "
+"och köra kommandon eller hämta skadlig programvara."
 
 #: js/src/Haas/Haas.js:25
 msgid ""
@@ -47,7 +52,7 @@ msgstr ""
 
 #: js/src/Haas/HaasForm.js:40
 msgid "Proxy Settings"
-msgstr ""
+msgstr "Proxyinställningar"
 
 #: js/src/Haas/HaasForm.js:43
 msgid "Enable HaaS proxy"
@@ -63,7 +68,7 @@ msgstr ""
 
 #: reforis_haas/__init__.py:50
 msgid "Cannot update HaaS settings"
-msgstr ""
+msgstr "Kan inte uppdatera HaaS-inställningarna"
 
 #~ msgid "Haas"
 #~ msgstr ""
@@ -89,4 +94,3 @@ msgstr ""
 #~ "class=\"fas fa-external-link-alt "
 #~ "link-outside-icon fa-xs\"></i></sup></a>."
 #~ msgstr ""
-
