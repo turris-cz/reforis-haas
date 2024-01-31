@@ -1,17 +1,23 @@
-image: python:3.10-slim
+image: registry.nic.cz/turris/reforis/reforis/reforis-image
 
 stages:
   - test
-  - build
 
 before_script:
   - apt-get update && apt-get -y install sudo make curl git
-  - make prepare-env && make prepare-dev
+  - make prepare-dev
 
 test:
   stage: test
   script:
     - make test
+
+test-js-build:
+  stage: test
+  script:
+    - cd js
+    - npm install
+    - npm run-script build -- -o /tmp/app.min.js
 
 lint:
   stage: test

@@ -6,8 +6,9 @@
  */
 
 import React from "react";
-import PropTypes from "prop-types";
+
 import { Switch, TextInput } from "foris";
+import PropTypes from "prop-types";
 
 HAASForm.propTypes = {
     formData: PropTypes.shape({
