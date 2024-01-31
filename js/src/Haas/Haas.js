@@ -6,10 +6,11 @@
  */
 
 import React from "react";
+
 import { ForisForm } from "foris";
 
-import API_URLs from "../API";
 import HaasForm from "./HaasForm";
+import API_URLs from "../API";
 
 export default function Haas() {
     return (
