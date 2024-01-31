@@ -3,6 +3,10 @@
 #  This is free software, licensed under the GNU General Public License v3.
 #  See /LICENSE for more information.
 
+"""
+HaaS module for reForis.
+"""
+
 from pathlib import Path
 from http import HTTPStatus
 
@@ -11,7 +15,6 @@ from flask_babel import gettext as _
 
 from reforis.foris_controller_api.utils import validate_json, APIError
 
-# pylint: disable=invalid-name
 blueprint = Blueprint(
     'Haas',
     __name__,
@@ -20,7 +23,6 @@ blueprint = Blueprint(
 
 BASE_DIR = Path(__file__).parent
 
-# pylint: disable=invalid-name
 haas = {
     'blueprint': blueprint,
     # Define {python_module_name}/js/app.min.js
