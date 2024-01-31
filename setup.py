@@ -36,7 +36,7 @@ setuptools.setup(
     packages=setuptools.find_packages(exclude=['tests']),
     include_package_data=True,
 
-    description='reForis HaaS Plugin.',
+    description='reForis HaaS Plugin is a key source of data which are used to build the dynamic firewall and other analyses.',
     url='https://gitlab.nic.cz/turris/reforis/reforis-haas',
     author='CZ.NIC, z.s.p.o. (https://www.nic.cz/)',
     author_email='software@turris.cz',
@@ -51,6 +51,7 @@ setuptools.setup(
             'pylint',
             'pycodestyle',
             'reforis @ git+https://gitlab.nic.cz/turris/reforis/reforis#egg=reforis',
+            'werkzeug == 2.0.3',  # TODO remove pin when werkzeug is fixed see https://gitlab.nic.cz/turris/reforis/reforis/-/merge_requests/316#note_249166
         ],
     },
     setup_requires=[
