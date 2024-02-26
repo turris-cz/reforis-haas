@@ -46,7 +46,7 @@ all:
 
 .PHONY: prepare-dev
 prepare-dev:
-	which npm || curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+	which npm || curl -sL https://deb.nodesource.com/setup_21.x | sudo -E bash -
 	which npm || sudo apt-get install -y nodejs
 	cd $(JS_DIR); npm install
 
