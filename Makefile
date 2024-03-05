@@ -110,8 +110,7 @@ lint-js-fix:
 
 .PHONY: lint-web
 lint-web: venv
-	$(VENV_BIN)/$(PYTHON) -m pylint --rcfile=pylintrc reforis_haas
-	$(VENV_BIN)/$(PYTHON) -m pycodestyle --config=pycodestyle reforis_haas
+	$(VENV_BIN)/$(PYTHON) -m ruff check reforis_haas
 
 
 # Testing
@@ -139,15 +138,15 @@ test-web: venv
 # Translations
 
 .PHONY: create-messages
-create-messages:
+create-messages: venv
 	$(VENV_BIN)/pybabel extract -F babel.cfg -o ./reforis_haas/translations/messages.pot . --project=$(PROJECT) --version=$(VERSION) --copyright-holder=$(COPYRIGHT_HOLDER) --msgid-bugs-address=$(MSGID_BUGS_ADDRESS)
 
 .PHONY: update-messages
-update-messages:
+update-messages: venv
 	$(VENV_BIN)/pybabel update -i ./reforis_haas/translations/messages.pot -d ./reforis_haas/translations --update-header-comment
 
 .PHONY: compile-messages
-compile-messages:
+compile-messages: venv install-js
 	$(VENV_BIN)/pybabel compile -f -d ./reforis_haas/translations
 
 
