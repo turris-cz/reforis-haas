@@ -4,8 +4,8 @@
 #  See /LICENSE for more information.
 
 PROJECT="reForis HaaS Plugin"
-# Retrieve version from setup.py 
-VERSION= $(shell sed -En "s/.*version=['\"](.+)['\"].*/\1/p" setup.py)
+# Retrieve version from pyproject.toml 
+VERSION= $(shell sed -En "s/.*version = ['\"](.+)['\"].*/\1/p" pyproject.toml)
 COPYRIGHT_HOLDER="CZ.NIC, z.s.p.o. (https://www.nic.cz/)"
 MSGID_BUGS_ADDRESS="tech.support@turris.cz"
 
@@ -13,6 +13,7 @@ VENV_NAME?=venv
 VENV_BIN=$(shell pwd)/$(VENV_NAME)/bin
 
 PYTHON=python3
+PIP_EXTRA_INDEX_URL=https://gitlab.nic.cz/api/v4/projects/1066/packages/pypi/simple
 
 JS_DIR=./js
 
@@ -56,11 +57,11 @@ prepare-dev:
 
 .PHONY: venv
 venv: $(VENV_NAME)/bin/activate
-$(VENV_NAME)/bin/activate: setup.py
+$(VENV_NAME)/bin/activate: pyproject.toml
 	test -d $(VENV_NAME) || $(PYTHON) -m virtualenv -p $(PYTHON) $(VENV_NAME)
 	# upgrade pip to latest releases
 	$(VENV_BIN)/$(PYTHON) -m pip install --upgrade pip
-	$(VENV_BIN)/$(PYTHON) -m pip install -e .[devel]
+	$(VENV_BIN)/$(PYTHON) -m pip install --index-url $(PIP_EXTRA_INDEX_URL) -e .[devel]
 	touch $(VENV_NAME)/bin/activate
 
 
@@ -70,7 +71,7 @@ $(VENV_NAME)/bin/activate: setup.py
 install:
 	opkg update
 	opkg install foris-controller-haas-module
-	$(PYTHON) -m pip install -e .
+	REFORIS_NO_JS_BUILD=1 $(PYTHON) -m pip install --index-url $(PIP_EXTRA_INDEX_URL) -e .
 	ln -sf /tmp/reforis-haas/reforis_static/reforis_haas /tmp/reforis/reforis_static/
 	/etc/init.d/lighttpd restart
 
