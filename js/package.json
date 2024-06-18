@@ -6,7 +6,7 @@
         "url": "https://gitlab.nic.cz/turris/reforis/reforis-haas.git"
     },
     "license": "GPL-3.0",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "reForis HaaS Plugin is a key source of data which are used to build the dynamic firewall and other analyses.",
     "main": "./src/app.js",
     "eslintConfig": {
