@@ -13,7 +13,7 @@
         "extends": "eslint-config-reforis"
     },
     "dependencies": {
-        "foris": "^5.6.1"
+        "foris": "^6.0.0"
     },
     "peerDependencies": {
         "prop-types": "15.8.1",
