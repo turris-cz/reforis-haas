@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "reforis-haas"
-version = "1.1.0"
+version = "1.2.0"
 description = "reForis HaaS Plugin is a key source of data which are used to build the dynamic firewall and other analyses."
 readme = "README.md"
 license = "GPL-3.0-or-later"
@@ -21,43 +21,24 @@ classifiers = [
     "Programming Language :: Python :: 3",
     "Topic :: Internet :: WWW/HTTP :: WSGI :: Application",
 ]
-dependencies = [
-    "Babel",
-    "flask",
-    "Flask-Babel",
-    "reforis",
-]
+dependencies = ["Babel", "flask", "Flask-Babel", "reforis"]
 
 [project.optional-dependencies]
-devel = [
-    "pytest",
-    "ruff",
-    "werkzeug",
-]
+devel = ["pytest", "ruff", "werkzeug"]
 
 [project.entry-points."foris.plugins"]
 reforis_haas = "reforis_haas:haas"
 
 [tool.hatch.build.targets.sdist]
-include = [
-    "/js",
-    "/reforis_haas",
-    "/reforis_static",
-]
+include = ["/js", "/reforis_haas", "/reforis_static"]
 
 [tool.hatch.build.targets.wheel.hooks.reforis]
 dependencies = ["hatch-reforis"]
 reforis_module = "reforis_haas"
 
 [tool.hatch.build.targets.wheel]
-include = [
-    "/reforis_haas",
-    "/reforis_static",
-]
-exclude = [
-    "**/*.po",
-    "**/*.pot",
-]
+include = ["/reforis_haas", "/reforis_static"]
+exclude = ["**/*.po", "**/*.pot"]
 
 [tool.ruff]
 line-length = 120
