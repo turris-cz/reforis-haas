@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-03-06 14:29+0100\n"
+"POT-Creation-Date: 2024-09-26 15:05+0200\n"
 "PO-Revision-Date: 2023-03-16 16:39+0000\n"
 "Last-Translator: Lukas Jelinek <lukas.jelinek@nic.cz>\n"
 "Language: cs\n"
@@ -18,13 +18,13 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.14.0\n"
+"Generated-By: Babel 2.16.0\n"
 
-#: js/src/Haas/Haas.js:18
+#: js/src/Haas/Haas.js:20
 msgid "Honeypot as a Service"
 msgstr "Honeypot as a Service"
 
-#: js/src/Haas/Haas.js:20
+#: js/src/Haas/Haas.js:22
 msgid ""
 "Honeypot as a Service (HaaS) is a special software which simulates an "
 "operating system and allows an attacker to log in via SSH or telnet and "
@@ -34,15 +34,13 @@ msgstr ""
 "operační systém a umožňuje útočníkovi, aby se přihlásil přes SSH nebo "
 "telnet a spouštěl příkazy či stahoval malware."
 
-#: js/src/Haas/Haas.js:26
+#: js/src/Haas/Haas.js:27
+#, fuzzy
 msgid ""
 "If you want to use Honeypot as a Service on your router, you should have "
 "the public IPv4 address, register on the HaaS website, and fill out the "
 "token. Also, there you can see sessions and statistics from the SSH "
-"honeypot from your router. For more information click <a "
-"href=\"https://haas.nic.cz/\" target=\"_blank\" rel=\"noopener "
-"noreferrer\">here<sup><i class=\"fas fa-external-link-alt link-outside-"
-"icon fa-xs ml-1\"></i></sup></a>."
+"honeypot from your router. For more information click "
 msgstr ""
 "Chcete-li používat Honeypot as a Service na svém routeru, měli byste mít "
 "veřejnou adresu IPv4, zaregistrovat se na webu HaaS a vyplnit token. Tam "
@@ -51,7 +49,11 @@ msgstr ""
 "rel=\"noopener noreferrer\">klikněte zde<sup><i class=\"fas fa-external-"
 "link-alt link-outside-icon fa-xs ml-1\"></i></sup></a>."
 
-#: js/src/Haas/Haas.js:54
+#: js/src/Haas/Haas.js:35
+msgid "here"
+msgstr ""
+
+#: js/src/Haas/Haas.js:68
 msgid "Please enter a valid alphanumeric token."
 msgstr "Vložte prosím platný alfanumerický token."
 

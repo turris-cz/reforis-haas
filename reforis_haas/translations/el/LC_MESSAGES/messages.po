@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-03-06 14:29+0100\n"
+"POT-Creation-Date: 2024-09-26 15:05+0200\n"
 "PO-Revision-Date: 2020-11-22 20:08+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: el\n"
@@ -17,31 +17,32 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.14.0\n"
+"Generated-By: Babel 2.16.0\n"
 
-#: js/src/Haas/Haas.js:18
+#: js/src/Haas/Haas.js:20
 msgid "Honeypot as a Service"
 msgstr ""
 
-#: js/src/Haas/Haas.js:20
+#: js/src/Haas/Haas.js:22
 msgid ""
 "Honeypot as a Service (HaaS) is a special software which simulates an "
 "operating system and allows an attacker to log in via SSH or telnet and "
 "execute commands or download malware."
 msgstr ""
 
-#: js/src/Haas/Haas.js:26
+#: js/src/Haas/Haas.js:27
 msgid ""
 "If you want to use Honeypot as a Service on your router, you should have "
 "the public IPv4 address, register on the HaaS website, and fill out the "
 "token. Also, there you can see sessions and statistics from the SSH "
-"honeypot from your router. For more information click <a "
-"href=\"https://haas.nic.cz/\" target=\"_blank\" rel=\"noopener "
-"noreferrer\">here<sup><i class=\"fas fa-external-link-alt link-outside-"
-"icon fa-xs ml-1\"></i></sup></a>."
+"honeypot from your router. For more information click "
 msgstr ""
 
-#: js/src/Haas/Haas.js:54
+#: js/src/Haas/Haas.js:35
+msgid "here"
+msgstr ""
+
+#: js/src/Haas/Haas.js:68
 msgid "Please enter a valid alphanumeric token."
 msgstr ""
 
@@ -88,5 +89,20 @@ msgstr ""
 #~ "                        noreferrer\">here<sup><i "
 #~ "class=\"fas fa-external-link-alt "
 #~ "link-outside-icon fa-xs\"></i></sup></a>."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you want to use Honeypot as "
+#~ "a Service on your router, you "
+#~ "should have the public IPv4 address, "
+#~ "register on the HaaS website, and "
+#~ "fill out the token. Also, there "
+#~ "you can see sessions and statistics "
+#~ "from the SSH honeypot from your "
+#~ "router. For more information click <a"
+#~ " href=\"https://haas.nic.cz/\" target=\"_blank\" "
+#~ "rel=\"noopener noreferrer\">here<sup><i class=\"fas "
+#~ "fa-external-link-alt link-outside-"
+#~ "icon fa-xs ml-1\"></i></sup></a>."
 #~ msgstr ""
 

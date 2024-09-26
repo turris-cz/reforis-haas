@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-03-06 14:29+0100\n"
+"POT-Creation-Date: 2024-09-26 15:05+0200\n"
 "PO-Revision-Date: 2022-10-11 11:22+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language: nb_NO\n"
@@ -18,13 +18,13 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.14.0\n"
+"Generated-By: Babel 2.16.0\n"
 
-#: js/src/Haas/Haas.js:18
+#: js/src/Haas/Haas.js:20
 msgid "Honeypot as a Service"
 msgstr "Honningfelle som tjeneste"
 
-#: js/src/Haas/Haas.js:20
+#: js/src/Haas/Haas.js:22
 #, fuzzy
 msgid ""
 "Honeypot as a Service (HaaS) is a special software which simulates an "
@@ -35,16 +35,13 @@ msgstr ""
 "operativsystem og lar en angriper logge inn via SSH eller Telnet for å "
 "kjøre kommandoer eller laste opp skadevare."
 
-#: js/src/Haas/Haas.js:26
+#: js/src/Haas/Haas.js:27
 #, fuzzy
 msgid ""
 "If you want to use Honeypot as a Service on your router, you should have "
 "the public IPv4 address, register on the HaaS website, and fill out the "
 "token. Also, there you can see sessions and statistics from the SSH "
-"honeypot from your router. For more information click <a "
-"href=\"https://haas.nic.cz/\" target=\"_blank\" rel=\"noopener "
-"noreferrer\">here<sup><i class=\"fas fa-external-link-alt link-outside-"
-"icon fa-xs ml-1\"></i></sup></a>."
+"honeypot from your router. For more information click "
 msgstr ""
 "Hvis du bruker honningkrukke som tjeneste på ruteren din, bør du ha din "
 "offentlige IPv4-adresse, registrere den på HaaS-nettsiden, og fylle ut "
@@ -53,7 +50,11 @@ msgstr ""
 "target=\"_blank\" rel=\"noopener noreferrer\">her<sup><i class=\"fas fa-"
 "external-link-alt link-outside-icon fa-xs ml-1\"></i></sup></a>."
 
-#: js/src/Haas/Haas.js:54
+#: js/src/Haas/Haas.js:35
+msgid "here"
+msgstr ""
+
+#: js/src/Haas/Haas.js:68
 msgid "Please enter a valid alphanumeric token."
 msgstr "Skriv inn et gyldig alfanumerisk symbol."
 
