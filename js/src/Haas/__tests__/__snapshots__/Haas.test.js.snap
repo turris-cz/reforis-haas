@@ -18,7 +18,7 @@ exports[`<Haas /> Should render HaaS component and accept a valid token. 1`] = `
       here
       <sup>
         <i
-          class="fas fa-external-link-alt link-outside-icon fa-xs ml-1"
+          class="fa"
         />
       </sup>
     </a>
@@ -32,7 +32,7 @@ exports[`<Haas /> Should render HaaS component and accept a valid token. 1`] = `
         Proxy Settings
       </h2>
       <div
-        class="form-check form-switch mb-3 null"
+        class="form-check form-switch mb-3"
       >
         <input
           class="form-check-input"
@@ -109,7 +109,7 @@ exports[`<Haas /> Should render HaaS component. 1`] = `
       here
       <sup>
         <i
-          class="fas fa-external-link-alt link-outside-icon fa-xs ml-1"
+          class="fa"
         />
       </sup>
     </a>
@@ -123,7 +123,7 @@ exports[`<Haas /> Should render HaaS component. 1`] = `
         Proxy Settings
       </h2>
       <div
-        class="form-check form-switch mb-3 null"
+        class="form-check form-switch mb-3"
       >
         <input
           class="form-check-input"
