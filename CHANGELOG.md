@@ -8,6 +8,17 @@ and this project adheres to
 
 ## [Unreleased]
 
+## [1.2.0] - 2024-09-26
+
+### Added
+
+-   Added & updated Weblate translations
+
+### Changed
+
+-   Updated Foris JS library to v6.2.1
+-   Migrated to FontAwesome v6
+
 ## [1.1.0] - 2024-06-18
 
 ### Changed
@@ -75,7 +86,8 @@ and this project adheres to
 -   Add tests and snapshots
 -   Move HaaS page under Sentinel
 
-[unreleased]: https://gitlab.nic.cz/turris/reforis/reforis-haas/-/compare/v1.1.0...master
+[unreleased]: https://gitlab.nic.cz/turris/reforis/reforis-haas/-/compare/v1.2.0...master
+[1.2.0]: https://gitlab.nic.cz/turris/reforis/reforis-haas/-/compare/v1.1.0...v1.2.0
 [1.1.0]: https://gitlab.nic.cz/turris/reforis/reforis-haas/-/compare/v1.0.0...v1.1.0
 [1.0.0]: https://gitlab.nic.cz/turris/reforis/reforis-haas/-/compare/v0.1.4...v1.0.0
 [0.1.4]: https://gitlab.nic.cz/turris/reforis/reforis-haas/-/compare/v0.1.3...v0.1.4
