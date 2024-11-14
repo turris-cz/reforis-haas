@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2024-09-26 15:05+0200\n"
-"PO-Revision-Date: 2024-10-10 13:15+0000\n"
-"Last-Translator: Lukas Jelinek <lukas.jelinek@nic.cz>\n"
+"PO-Revision-Date: 2024-11-15 13:00+0000\n"
+"Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/turris/"
 "reforis-haas-plugin/cs/>\n"
 "Language: cs\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
-"X-Generator: Weblate 5.8-dev\n"
+"X-Generator: Weblate 5.9-dev\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: js/src/Haas/Haas.js:20
@@ -31,9 +31,9 @@ msgid ""
 "operating system and allows an attacker to log in via SSH or telnet and "
 "execute commands or download malware."
 msgstr ""
-"Honeypot as a Service (HaaS) je speciální software, který simuluje "
-"operační systém a umožňuje útočníkovi, aby se přihlásil přes SSH nebo "
-"telnet a spouštěl příkazy či stahoval malware."
+"Honeypot as a Service (HaaS) je speciální software, který simuluje operační "
+"systém a umožňuje útočníkovi přihlásit se přes SSH nebo telnet a spouštět "
+"příkazy nebo stahovat malware."
 
 #: js/src/Haas/Haas.js:27
 msgid ""
@@ -42,18 +42,18 @@ msgid ""
 "token. Also, there you can see sessions and statistics from the SSH "
 "honeypot from your router. For more information click "
 msgstr ""
-"Chcete-li používat Honeypot as a Service na svém routeru, měli byste mít "
-"veřejnou adresu IPv4, zaregistrovat se na webu HaaS a vyplnit token. Tam "
-"také můžete sledovat relace a statistiky SSH honeypotu ze svého routeru. Pro "
-"více informací klikněte "
+"Pokud chcete používat Honeypot as a Service na svém směrovači, měli byste "
+"mít veřejnou adresu IPv4, zaregistrovat se na webu HaaS a vyplnit token. Tam "
+"také můžete sledovat relace a statistiky SSH honeypotu ze svého zařízení. "
+"Pro více informací klikněte "
 
 #: js/src/Haas/Haas.js:35
 msgid "here"
-msgstr "zde"
+msgstr "sem"
 
 #: js/src/Haas/Haas.js:68
 msgid "Please enter a valid alphanumeric token."
-msgstr "Vložte prosím platný alfanumerický token."
+msgstr "Vložte platný alfanumerický token."
 
 #: js/src/Haas/HaasForm.js:41
 msgid "Proxy Settings"
@@ -65,11 +65,11 @@ msgstr "Zapnout proxy HaaS"
 
 #: js/src/Haas/HaasForm.js:53
 msgid "HaaS token"
-msgstr "Token HaaS"
+msgstr "HaaS token"
 
 #: js/src/Haas/HaasForm.js:55
 msgid "Token used to match SSH session with device in HaaS proxy."
-msgstr "Token používaný pro propojení session v SSH se zařízením v proxy HaaS."
+msgstr "Token používaný pro propojení relace v SSH se zařízením v proxy HaaS."
 
 #: reforis_haas/__init__.py:52
 msgid "Cannot update HaaS settings"
