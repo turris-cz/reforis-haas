@@ -8,85 +8,98 @@ and this project adheres to
 
 ## [Unreleased]
 
+## [1.3.0] - 2025-04-25
+
+### Added
+
+- Added & updated Weblate translations
+
+### Changed
+
+- Updated dependencies in package.json
+- Fixed webpack configuration for process/browser.js
+- Re-resolved and re-locked all npm dependencies in package-lock.json
+
 ## [1.2.0] - 2024-09-26
 
 ### Added
 
--   Added & updated Weblate translations
+- Added & updated Weblate translations
 
 ### Changed
 
--   Updated Foris JS library to v6.2.1
--   Migrated to FontAwesome v6
+- Updated Foris JS library to v6.2.1
+- Migrated to FontAwesome v6
 
 ## [1.1.0] - 2024-06-18
 
 ### Changed
 
--   Updated Foris JS library to v6.0.0
--   Updated dependencies in package.json
--   Updated .gitignore to exclude Ruff cache files
--   NPM audit fix
+- Updated Foris JS library to v6.0.0
+- Updated dependencies in package.json
+- Updated .gitignore to exclude Ruff cache files
+- NPM audit fix
 
 ### Removed
 
--   Removed unused files
+- Removed unused files
 
 ## [1.0.0] - 2024-03-06
 
 ### Added
 
--   Added & updated translations
--   Added command to install foris-controller-haas-module in Makefile
+- Added & updated translations
+- Added command to install foris-controller-haas-module in Makefile
 
 ### Changed
 
--   Updated dependencies in package.json
--   Updated Node.js to v21.x in Makefile
--   Updated ESLint and Prettier configurations
--   Updated .gitignore to exclude minified JS files and license files
--   Updated webpack.config.js with process/browser alias
--   Updated CI to use shared scripts, build and publish python package
--   Replaced Pylint & Pycodestyle for Ruff
--   Fixed changelog's file extension
--   NPM audit fix
+- Updated dependencies in package.json
+- Updated Node.js to v21.x in Makefile
+- Updated ESLint and Prettier configurations
+- Updated .gitignore to exclude minified JS files and license files
+- Updated webpack.config.js with process/browser alias
+- Updated CI to use shared scripts, build and publish python package
+- Replaced Pylint & Pycodestyle for Ruff
+- Fixed changelog's file extension
+- NPM audit fix
 
 ## [0.1.4] - 2022-09-23
 
--   Add & update translations
--   Restructure & update Makefile
--   Update Python image to v3.10.x
--   Improve intro text & strings parsing
--   Move reforis to devel extras dependencies
--   Fix enabled state when a token is missing
--   NPM audit fix
+- Add & update translations
+- Restructure & update Makefile
+- Update Python image to v3.10.x
+- Improve intro text & strings parsing
+- Move reforis to devel extras dependencies
+- Fix enabled state when a token is missing
+- NPM audit fix
 
 ## [0.1.3] - 2021-06-07
 
--   Add support for longer tokens
--   Use Switch instead of Checkbox for HaaS proxy
+- Add support for longer tokens
+- Use Switch instead of Checkbox for HaaS proxy
 
 ## [0.1.2] - 2021-05-24
 
--   Add translations
--   Update Foris JS library to v0.1.2
--   NPM audit fix
+- Add translations
+- Update Foris JS library to v0.1.2
+- NPM audit fix
 
 ## [0.1.1] - 2021-02-04
 
--   Remove duplicate Norwegian language
--   Remove translation file for the source language
--   Update Foris JS library to version 5.1.9
+- Remove duplicate Norwegian language
+- Remove translation file for the source language
+- Update Foris JS library to version 5.1.9
 
 ## [0.1.0] - 2020-11-26
 
--   Init plugin
--   Add HaaS endpoint
--   Add HaaS proxy settings
--   Add tests and snapshots
--   Move HaaS page under Sentinel
+- Init plugin
+- Add HaaS endpoint
+- Add HaaS proxy settings
+- Add tests and snapshots
+- Move HaaS page under Sentinel
 
-[unreleased]: https://gitlab.nic.cz/turris/reforis/reforis-haas/-/compare/v1.2.0...master
+[unreleased]: https://gitlab.nic.cz/turris/reforis/reforis-haas/-/compare/v1.3.0...master
+[1.3.0]: https://gitlab.nic.cz/turris/reforis/reforis-haas/-/compare/v1.2.0...v1.3.0
 [1.2.0]: https://gitlab.nic.cz/turris/reforis/reforis-haas/-/compare/v1.1.0...v1.2.0
 [1.1.0]: https://gitlab.nic.cz/turris/reforis/reforis-haas/-/compare/v1.0.0...v1.1.0
 [1.0.0]: https://gitlab.nic.cz/turris/reforis/reforis-haas/-/compare/v0.1.4...v1.0.0
