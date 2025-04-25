@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "reforis-haas"
-version = "1.2.0"
+version = "1.3.0"
 description = "reForis HaaS Plugin is a key source of data which are used to build the dynamic firewall and other analyses."
 readme = "README.md"
 license = "GPL-3.0-or-later"
