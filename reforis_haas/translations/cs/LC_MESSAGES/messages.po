@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-04-25 15:03+0200\n"
-"PO-Revision-Date: 2024-11-15 13:00+0000\n"
+"POT-Creation-Date: 2025-11-07 18:56+0300\n"
+"PO-Revision-Date: 2025-05-14 20:01+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language: cs\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/turris/reforis-"
@@ -32,7 +32,7 @@ msgid ""
 msgstr ""
 "Honeypot as a Service (HaaS) je speciální software, který simuluje "
 "operační systém a umožňuje útočníkovi přihlásit se přes SSH nebo telnet a"
-" spouštět příkazy nebo stahovat malware."
+" spouštět příkazy nebo stahovat škodlivý software."
 
 #: js/src/Haas/Haas.js:27
 msgid ""
@@ -41,10 +41,10 @@ msgid ""
 "token. Also, there you can see sessions and statistics from the SSH "
 "honeypot from your router. For more information click "
 msgstr ""
-"Pokud chcete používat Honeypot as a Service na svém směrovači, měli byste"
-" mít veřejnou adresu IPv4, zaregistrovat se na webu HaaS a vyplnit token."
-" Tam také můžete sledovat relace a statistiky SSH honeypotu ze svého "
-"zařízení. Pro více informací klikněte "
+"Pokud na svém směrovači chcete používat Honeypot as a Service, měli byste"
+" mít veřejnou IPv4 adresu, zaregistrovat se na webu HaaS a vyplnit tam "
+"token. Také je tam možné sledovat relace a statistiky SSH honeypotu ze "
+"svého zařízení. Další informace obdržíte kliknutím na "
 
 #: js/src/Haas/Haas.js:35
 msgid "here"
@@ -52,7 +52,7 @@ msgstr "sem"
 
 #: js/src/Haas/Haas.js:68
 msgid "Please enter a valid alphanumeric token."
-msgstr "Vložte platný alfanumerický token."
+msgstr "Vložte platný token (písmena a číslice)."
 
 #: js/src/Haas/HaasForm.js:41
 msgid "Proxy Settings"
@@ -72,7 +72,7 @@ msgstr "Token používaný pro propojení relace v SSH se zařízením v proxy H
 
 #: reforis_haas/__init__.py:52
 msgid "Cannot update HaaS settings"
-msgstr "Nelze aktualizovat nastavení HaaS"
+msgstr "Nebylo možné aktualizovat nastavení HaaS"
 
 #~ msgid "Haas"
 #~ msgstr ""
