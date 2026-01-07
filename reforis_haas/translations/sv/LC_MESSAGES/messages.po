@@ -9,16 +9,16 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2025-11-07 18:56+0300\n"
-"PO-Revision-Date: 2023-09-23 19:01+0000\n"
-"Last-Translator: Kristoffer Grundström "
-"<swedishsailfishosuser@tutanota.com>\n"
+"PO-Revision-Date: 2026-01-08 19:01+0000\n"
+"Last-Translator: Kristoffer Grundström <swedishsailfishosuser@tutanota.com>\n"
+"Language-Team: Swedish <https://hosted.weblate.org/projects/turris/reforis-"
+"haas-plugin/sv/>\n"
 "Language: sv\n"
-"Language-Team: Swedish <https://hosted.weblate.org/projects/turris"
-"/reforis-haas-plugin/sv/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.1\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: js/src/Haas/Haas.js:20
@@ -45,7 +45,7 @@ msgstr ""
 
 #: js/src/Haas/Haas.js:35
 msgid "here"
-msgstr ""
+msgstr "här"
 
 #: js/src/Haas/Haas.js:68
 msgid "Please enter a valid alphanumeric token."
@@ -57,7 +57,7 @@ msgstr "Proxyinställningar"
 
 #: js/src/Haas/HaasForm.js:44
 msgid "Enable HaaS proxy"
-msgstr ""
+msgstr "Aktivera HaaS-proxy"
 
 #: js/src/Haas/HaasForm.js:53
 msgid "HaaS token"
@@ -110,4 +110,3 @@ msgstr "Kan inte uppdatera HaaS-inställningarna"
 #~ "fa-external-link-alt link-outside-"
 #~ "icon fa-xs ml-1\"></i></sup></a>."
 #~ msgstr ""
-
