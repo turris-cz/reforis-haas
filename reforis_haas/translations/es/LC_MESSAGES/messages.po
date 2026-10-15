@@ -1,25 +1,24 @@
 # Spanish translations for reForis HaaS Plugin.
-# Copyright (C) 2025 CZ.NIC, z.s.p.o. (https://www.nic.cz/)
+# Copyright (C) 2026 CZ.NIC, z.s.p.o. (https://www.nic.cz/)
 # This file is distributed under the same license as the reForis HaaS Plugin
 # project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-11-07 18:56+0300\n"
+"POT-Creation-Date: 2026-10-15 20:05+0300\n"
 "PO-Revision-Date: 2026-09-04 13:58+0000\n"
 "Last-Translator: Deleted User <noreply+48943@weblate.org>\n"
 "Language: es\n"
-"Language-Team: Spanish <https://hosted.weblate.org/projects/turris/reforis-"
-"haas-plugin/es/>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/turris"
+"/reforis-haas-plugin/es/>\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.17.0\n"
-"X-Generator: Weblate 2026.9\n"
+"Generated-By: Babel 2.18.0\n"
 
 #: js/src/Haas/Haas.js:20
 msgid "Honeypot as a Service"
@@ -31,9 +30,9 @@ msgid ""
 "operating system and allows an attacker to log in via SSH or telnet and "
 "execute commands or download malware."
 msgstr ""
-"Honeypot as a Service (HaaS) es un software especial que simula un sistema "
-"operativo y permite a un atacante iniciar sesión a través de SSH o telnet y "
-"ejecutar comandos o descargar malware."
+"Honeypot as a Service (HaaS) es un software especial que simula un "
+"sistema operativo y permite a un atacante iniciar sesión a través de SSH "
+"o telnet y ejecutar comandos o descargar malware."
 
 #: js/src/Haas/Haas.js:27
 msgid ""
@@ -43,9 +42,9 @@ msgid ""
 "honeypot from your router. For more information click "
 msgstr ""
 "Si quieres usar Honeypot como servicio en tu router, debes tener la "
-"dirección IPv4 pública, registrarte en el sitio web de HaaS y completar el "
-"token. Además, allí puedes ver las sesiones y estadísticas del honeypot SSH "
-"de tu router. Para más información haz clic en "
+"dirección IPv4 pública, registrarte en el sitio web de HaaS y completar "
+"el token. Además, allí puedes ver las sesiones y estadísticas del "
+"honeypot SSH de tu router. Para más información haz clic en "
 
 #: js/src/Haas/Haas.js:35
 msgid "here"
@@ -70,10 +69,10 @@ msgstr "Token HaaS"
 #: js/src/Haas/HaasForm.js:55
 msgid "Token used to match SSH session with device in HaaS proxy."
 msgstr ""
-"Token utilizado para asociar la sesión SSH con el dispositivo en el proxy "
-"HaaS."
+"Token utilizado para asociar la sesión SSH con el dispositivo en el proxy"
+" HaaS."
 
-#: reforis_haas/__init__.py:52
+#: reforis_haas/__init__.py:51
 msgid "Cannot update HaaS settings"
 msgstr "No se pueden actualizar los ajustes de HaaS"
 
@@ -105,3 +104,4 @@ msgstr "No se pueden actualizar los ajustes de HaaS"
 #~ "                        noreferrer\">aquí<sup><i "
 #~ "class=\"fas fa-external-link-alt "
 #~ "link-outside-icon fa-xs\"></i></sup></a>."
+
