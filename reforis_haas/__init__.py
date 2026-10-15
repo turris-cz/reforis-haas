@@ -7,13 +7,12 @@
 HaaS module for reForis.
 """
 
-from pathlib import Path
 from http import HTTPStatus
+from pathlib import Path
 
 from flask import Blueprint, current_app, jsonify, request
 from flask_babel import gettext as _
-
-from reforis.foris_controller_api.utils import validate_json, APIError
+from reforis.foris_controller_api.utils import APIError, validate_json
 
 blueprint = Blueprint(
     'Haas',
