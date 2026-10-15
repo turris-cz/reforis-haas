@@ -1,28 +1,29 @@
 # Lithuanian translations for reForis HaaS Plugin.
-# Copyright (C) 2025 CZ.NIC, z.s.p.o. (https://www.nic.cz/)
+# Copyright (C) 2026 CZ.NIC, z.s.p.o. (https://www.nic.cz/)
 # This file is distributed under the same license as the reForis HaaS Plugin
 # project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-11-07 18:56+0300\n"
-"PO-Revision-Date: 2020-11-22 20:08+0100\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2026-10-15 20:05+0300\n"
+"PO-Revision-Date: 2026-09-04 13:58+0000\n"
+"Last-Translator: Fln <weblate.org@fln.lt>\n"
 "Language: lt\n"
-"Language-Team: lt <LL@li.org>\n"
+"Language-Team: Lithuanian <https://hosted.weblate.org/projects/turris"
+"/reforis-haas-plugin/lt/>\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "(n%100<10 || n%100>=20) ? 1 : 2);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.17.0\n"
+"Generated-By: Babel 2.18.0\n"
 
 #: js/src/Haas/Haas.js:20
 msgid "Honeypot as a Service"
-msgstr ""
+msgstr "Honeypotas kaip paslauga"
 
 #: js/src/Haas/Haas.js:22
 msgid ""
@@ -30,6 +31,10 @@ msgid ""
 "operating system and allows an attacker to log in via SSH or telnet and "
 "execute commands or download malware."
 msgstr ""
+"Honeypotas kaip paslauga (HaaS) yra speciali programinė įranga kuri "
+"imituoja operacinę sistemą ir leidžia įsibrovėliams prisijungti per SSH "
+"arba telnet protokolus ir paleisti komandas kenkėjiškų programų "
+"parsiuntimui."
 
 #: js/src/Haas/Haas.js:27
 msgid ""
@@ -38,34 +43,39 @@ msgid ""
 "token. Also, there you can see sessions and statistics from the SSH "
 "honeypot from your router. For more information click "
 msgstr ""
+"Jeigu norite naudoti Honeypot kaip paslaugą šiame maršrutizatoriuje, jūs "
+"turite turėti viešai pasiekiamą IPv4 adresą, užsiregistruoti HaaS "
+"svetainėje, ir įvesti prieigos kodą. Taip pat, čia galite matyti sesijas "
+"ir statistiką pateikiama iš jūsų maršrutizatoriaus SSH honeypoto. Daugiau"
+" informacijos paspaudus "
 
 #: js/src/Haas/Haas.js:35
 msgid "here"
-msgstr ""
+msgstr "čia"
 
 #: js/src/Haas/Haas.js:68
 msgid "Please enter a valid alphanumeric token."
-msgstr ""
+msgstr "Prašome įvesti tinkamą prieigos kodą sudarytą iš skaičių ir raidžių."
 
 #: js/src/Haas/HaasForm.js:41
 msgid "Proxy Settings"
-msgstr ""
+msgstr "Proxy nustatymai"
 
 #: js/src/Haas/HaasForm.js:44
 msgid "Enable HaaS proxy"
-msgstr ""
+msgstr "Įjungti HaaS proxy"
 
 #: js/src/Haas/HaasForm.js:53
 msgid "HaaS token"
-msgstr ""
+msgstr "HaaS prieigos kodas"
 
 #: js/src/Haas/HaasForm.js:55
 msgid "Token used to match SSH session with device in HaaS proxy."
-msgstr ""
+msgstr "Kodas naudojamas susieti SSH sesijas su įrenginiu per HaaS proxy."
 
-#: reforis_haas/__init__.py:52
+#: reforis_haas/__init__.py:51
 msgid "Cannot update HaaS settings"
-msgstr ""
+msgstr "Nepavyko atnaujinti HaaS nustatymų"
 
 #~ msgid "Haas"
 #~ msgstr ""

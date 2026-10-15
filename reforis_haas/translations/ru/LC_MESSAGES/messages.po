@@ -1,15 +1,15 @@
 # Russian translations for reForis HaaS Plugin.
-# Copyright (C) 2025 CZ.NIC, z.s.p.o. (https://www.nic.cz/)
+# Copyright (C) 2026 CZ.NIC, z.s.p.o. (https://www.nic.cz/)
 # This file is distributed under the same license as the reForis HaaS Plugin
 # project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-11-07 18:56+0300\n"
-"PO-Revision-Date: 2025-04-08 00:40+0000\n"
+"POT-Creation-Date: 2026-10-15 20:05+0300\n"
+"PO-Revision-Date: 2026-09-04 13:58+0000\n"
 "Last-Translator: Алексей Леньшин <alenshin@gmail.com>\n"
 "Language: ru\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/turris"
@@ -19,7 +19,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.17.0\n"
+"Generated-By: Babel 2.18.0\n"
 
 #: js/src/Haas/Haas.js:20
 msgid "Honeypot as a Service"
@@ -75,7 +75,7 @@ msgstr ""
 "Токен используется для сопоставления сеанса SSH с устройством в "
 "прокси-сервере HaaS."
 
-#: reforis_haas/__init__.py:52
+#: reforis_haas/__init__.py:51
 msgid "Cannot update HaaS settings"
 msgstr "Не удается обновить настройки HaaS"
 
